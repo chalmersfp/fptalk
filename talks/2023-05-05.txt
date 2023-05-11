@@ -1,0 +1,16 @@
+On Friday, the 5th of May, we have a FP talk by Dhasarathy :)
+It is at 11:00 AM in EDIT 5128 
+
+--
+
+Foundation modeling beyond natural language - It's fair to say that
+neural language processing is setting the pace in deep learning
+today. Other domains like computer vision are quickly being left
+behind. If other domains can't beat NLP, maybe it's time to join
+'em. I'll focus upon two examples in how the toolkit pioneered in NLP
+can be extended to other domains in automotive engineering. The first
+is where we use unsupervised pre-training in the vision domain to
+solve a task in vehicle dynamics. The second example is in the domain
+of programming language where we use unsupervised pre-training and
+some rule-based vector arithmetic to solve a task in software design.
+ 

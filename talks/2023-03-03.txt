@@ -1,0 +1,29 @@
+Patrik Jansson: Level-p-complexity of Boolean Functions: Using thinning, memoization, and polynomials
+
+Abstract
+
+This talk presents a function for computing level-$p$-complexity of
+Boolean functions, and applies it to two-level iterated majority. The
+function is specified as a classical optimisation problem: first
+generate all candidates, then pick the best one. To make this function
+efficient we we use use thinning and memoization and for seperation of
+concerns we use type classes. The complexity is represented using
+polynomials, and the order relation used for thinning is implemented
+using polynomial factorisation and root-counting.  (Joint work with
+Julia Jansson, MV, Chalmers.)
+
+Paper in submission for JFP: https://arxiv.org/abs/2302.02473
+Associated code on github: https://github.com/juliajansson/BoFunComplexity
+
+----
+
+Carl reminded me that I had promised to post a link to the recording:
+  https://youtu.be/Z0cACMp8_hk
+Level-p-complexity of Boolean Functions (Patrik Jansson)
+
+As mentioned in the abstract, the code is also online:
+  https://github.com/juliajansson/bofuncomplexity
+and the slides
+  https://github.com/juliajansson/BoFunComplexity/blob/main/talk/2023-03_Jansson_RandComplex.pdf
+
+/Patrik

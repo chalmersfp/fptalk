@@ -1,0 +1,23 @@
+On Monday the 27th of March we have a FP-talk at 11:00 in
+Analysen. Abhiroop will talk about our recent work on running Haskell
+in TEE's. There will not be a FP talk on this coming Friday, the 24th,
+as it clashes with Elisabet's PhD defence.
+
+
+Title: HasTEE -- Confidential Computing on Trusted Execution Environments with Haskell
+
+Abstract:
+
+This talk presents HasTEE, a Domain-Specific Language in Haskell that
+allows the seamless programming of hardware-enforced memory isolation
+units called Trusted Execution Environment (TEEs). HasTEE provides a
+typed, high-level programming model that automatically
+compartmentalizes the confidential portions of a program on the TEE
+unit, and then enforces lightweight Information Flow Control policies
+to prevent unintentional leakage of secrets outside the TEE. We have
+demonstrated the practicality of HasTEE through case studies on
+Federated Learning and Differentially Private Data Clean Rooms. In the
+final part of the talk, I will discuss how designing a
+capability-constrained subset of Haskell could potentially remove
+notions of ambient authority from a HasTEE application.
+

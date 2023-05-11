@@ -1,0 +1,34 @@
+Next Tuesday, the 9th of May, we have a FP talk by Hrutvik Kanabar about PureCake!
+It takes place at 11:00 in Analysen. 
+
+I hope to see many of you there!
+
+Robert
+
+--
+
+Title: PureCake: A Verified Compiler for a Lazy Functional Language
+Speaker: Hrutvik Kanabar
+
+This is a practice talk for PLDI'23, where Hrutvik (PhD student
+at the University of Kent, UK) will present the following paper.
+Hrutvik will be visiting Chalmers for Tue 9 and Wed 10 May.
+
+PureCake: A Verified Compiler for a Lazy Functional Language
+
+We present PureCake, a mechanically-verified compiler for PureLang, a
+lazy, purely functional programming language with monadic
+effects. PureLang syntax is Haskell-like and indentation-sensitive,
+and its constraint-based Hindley-Milner type system guarantees safe
+execution. We derive sound equational reasoning principles over its
+operational semantics, dramatically simplifying some proofs. We prove
+end-to-end correctness for the compilation of PureLang down to machine
+code—the first such result for any lazy language—by targeting CakeML
+and composing with its verified compiler. Multiple optimisation passes
+are necessary to handle realistic lazy idioms effectively. We develop
+PureCake entirely within the HOL4 interactive theorem prover.
+
+The full paper is here: https://cakeml.org/pldi23-purecake.pdf
+
+This is joint work with: Samuel Vivien, Oskar Abrahamsson, Magnus
+O. Myreen, Michael Norrish, Johannes Åman Pohjola, Riccardo Zanetti.

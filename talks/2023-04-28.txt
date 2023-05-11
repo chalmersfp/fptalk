@@ -1,0 +1,16 @@
+On Friday the 28th a masters' student, Lawrence, will talk about the
+BUBS runtime :) At 11:00 AM in Analysen. The presentation will detail
+one corner of this masters' thesis, which will be presented in its
+entirety closer to summer.
+
+-- Lawrence's abstract
+
+The BUBS runtime
+
+Is garbage collection getting to you?
+Are you stumped by STG?
+Is runtime complexity ruining your research?
+
+If so, come to Friday's FP talk, where I will present
+Shivers & Wand 's BUBS algorithm for λ-calculus reduction,
+which is simple, fast, lazy, garbage-free, and supports open terms.

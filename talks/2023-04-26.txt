@@ -1,0 +1,16 @@
+On Wednesday the 26th of April, Troels Henriksen will give a FP-Talk at 10:00 in EDIT 8103
+
+Title: Augmenting Hindley-Milner Type Inference with Array Language Features
+
+Abstract: The Hindley-Milner type system is a true jewel; perfectly
+balanced such that almost any extension will harming its important
+properties.  In this talk I will about extending Hindley-Milner with a
+notion of size-dependent types, suitable for encoding array programming
+patterns.  The goal is to provide a type system that feels not much more
+complicated than your standard Hindley-Milner-based language
+(e.g. Standard ML), but provides some of the flexibility usually only
+found in dependently typed languages.  The work is done in the context
+of the Futhark programming language, and my talk will focus on the
+intuition behind the properties and features we want such a type system
+to have, as well as outlining our (currently only partially complete)
+efforts at formalisation.

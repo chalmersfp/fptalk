@@ -1,0 +1,12 @@
+Hej everyone! A friendly reminder that there's an FP-talk by John
+Hughes in analysen at 11am today :)
+
+
+John Hughes: I want a partial evaluator for Erlang
+
+I’ve had a bee in my bonnet about this recently, but so far I don’t
+have one, and–surprisingly–as far as I can tell, neither does anyone
+else. The problem is Erlang’s concurrency. In the talk I’ll explain
+what I want from a partial evaluator, why work from the past doesn’t
+match up, and some of the interesting things that an Erlang partial
+evaluator will need to be able to do.

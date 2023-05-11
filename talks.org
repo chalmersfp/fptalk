@@ -1,0 +1,31 @@
+* FP talks 2023
+|    Calendar | Name / [special]              | Room booked |
+|-------------+-------------------------------+-------------|
+|  [[file:talks/2023-02-24.txt][2023-02-24]] | John Hughes                   | Analysen    |
+|  [[file:talks/2023-03-03.txt][2023-03-03]] | Patrik Jansson                | EDIT-8103   |
+|  [[file:talks/2023-03-10.txt][2023-03-10]] | Yinan                         | Analysen    |
+|  [[file:talks/2023-03-17.txt][2023-03-17]] | Samantha (Marys visitor)      | EDIT-8103   |
+|  [[file:talks/2023-03-27.txt][2023-03-27]] | Abi                           | Analysen    |
+|  [[file:talks/2023-04-12.txt][2023-04-12]] | James Koppel                  | EDIT-8103   |
+|  [[file:talks/2023-04-14.txt][2023-04-14]] | Agustin & Matthi              | Analysen    |
+|  [[file:talks/2023-04-21.txt][2023-04-21]] | Carl-Johan Seger              | EDIT 8103   |
+|  [[file:talks/2023-04-26.txt][2023-04-26]] | Troels Henrikssen             | EDIT-8103   |
+|  [[file:talks/2023-04-28.txt][2023-04-28]] | Lawrence Chonavel             | Analysen    |
+|  [[file:talks/2023-05-05.txt][2023-05-05]] | Dhasarathy Parthasarathy      | Analysen    |
+|  [[file:talks/2023-05-09.txt][2023-05-09]] | Magnus Myreen                 |             |
+|  [[file:talks/2023-05-12.txt][2023-05-12]] | Jean-Philippe Bernardy        | Analysen    |
+|  2023-05-19 | [Klämdag Kristi him.]         |             |
+|  [[file:talks/2023-05-24.txt][2023-05-24]] | Lennart Augustsson            | Analysen    |
+|  [[file:talks/2023-05-26.txt][2023-05-26]] | Jeremy Pope                   | Analysen    |
+|  [[file:talks/2023-06-02.txt][2023-06-02]] | Alex Gerdes                   | Analysen    |
+|  2023-06-09 | [CS retreat + Chalmers party] | -------     |
+| [[file:talks/2023-06-14.txt][2023-06-14]]? | Lawrence Chonavel             |             |
+|  2023-06-16 | [CSE dept. day]               | -------     |
+|  2023-06-23 | [Midsummer]                   | -------     |
+|  [[file:talks/2023-06-30.txt][2023-06-30]] | Krasimir Angelov              | Analysen    |
+|  [[file:talks/2023-07-07.txt][2023-07-07]] |                               |             |
+|  [[file:talks/2023-07-14.txt][2023-07-14]] |                               |             |
+|  [[file:talks/2023-07-21.txt][2023-07-21]] |                               |             |
+|  [[file:talks/2023-07-28.txt][2023-07-28]] |                               |             |
+|  [[file:talks/2023-08-04.txt][2023-08-04]] |                               |             |
+

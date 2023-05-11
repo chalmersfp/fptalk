@@ -1,0 +1,35 @@
+I had a request to squeeze in yet another talk! Matthi & Agustin are
+presenting talks at the same conference, so we'll let them dry-run
+them both tomorrow.
+
+Austin will start at the usual time of 11:00, and Matthi begins at
+11:30 instead.
+
+--
+
+This week we have not one, but two fp talks :)! As already announced,
+James Koppel is giving a talk on Wednesday (please see previous
+announcement, I will send out a reminder tomorrow). On Friday (the
+normal slot), Matthi will give us a dry-run of a conference
+presentation he will give.
+
+On Friday the 14th of April, we have a talk by Matthías Páll
+Gissurarson at 11:15-12:15, in Analysen. Please note the time,
+11:15-12:15, instead of 11-12. 
+
+--
+
+Abstract:
+
+Following up on Jimmy's talk, I'll present a dry-run of my ICST talk
+on Spectacular, a new tool for automatically discovering candidate
+laws for use in property-based testing. By using the
+recently-developed technique of ECTAs (Equality-Constrained Tree
+Automata), Spectacular improves upon previous approaches such as
+QuickSpec: it can explore vastly larger program spaces and start
+generating candidate laws within 20 seconds from a benchmark where
+QuickSpec runs for ~45 minutes and then crashes (due to memory limits,
+even on a 256 GB machine). Thanks to the ability of ECTAs to
+efficiently search constrained program spaces, Spectacular is fast
+enough to find candidate laws in more generally typed settings than
+the monomorphized one, even for signatures with dozens of functions.

@@ -1,0 +1,27 @@
+
+Hej everyone!
+
+Tomorrow at 11:00 in EDIT 8103, Carl Seger will give an FP-talk
+
+Title: Information Flow Control Analysis on Hardware for Timing Side-Channel detection.
+ 
+Abstract: Information Flow Control (IFC) Analysis has proven to be
+very powerful for analyzing how confidential information flow through
+software. For hardware, the traditional approach is to add extra
+circuitry that tracks the security level of the information as it
+flows through the machine. The security level is usually defined as a
+lattice and some approximation is used to compute the result when two
+values of different security levels meet in some operation. There are
+two main problems with this approach: 1) adding logic to a design is
+rather costly in terms of area, routing and power, and 2) the approach
+is often so conservative that many valid designs will be
+rejected. Recently some attempts at using programming language type
+IFC analysis on hardware description languages have been
+proposed. Unfortunately, these are also quite conservative and will
+reject many valid designs. An interesting idea for IFC analysis in
+hardware is to use symbolic simulation, and symbolic trajectory
+evaluation in particular. Here we leverage the names of the variables
+used in the symbolic simulation to track the security level. We will
+illustrate how this technique can be used to discover several types of
+side channels.  Much of this talk is based on work I and Alejandro did
+a few years ago and that I have taken up again.

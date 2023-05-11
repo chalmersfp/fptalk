@@ -1,0 +1,27 @@
+FP-talk by Jean-Philippe Bernardy.
+The talk takes place in Analysen at 11:00 on Friday the 12th of May. 
+
+----
+ 
+Title: Linear Types for Box and Wires.
+
+A number of domain specific languages are best expressed as diagrams
+of boxes connected by wires. Applications for this kind of DSL include
+hardware circuits and data-science workflows. Another less treaded
+application are tensor calculus expressions.  A faithful abstraction
+of the concept of box and wires are Symmetric Monoidal Categories
+(SMCs).
+
+It is well known that lambda terms correspond to morphisms in (closed)
+cartesian categories. Can we use this idea to represent morphisms in
+an SMC?  We have two problems.  First, functions written in a
+functional language can cannot be evaluated to morphisms that can be
+manipulated within the same language. (Some form of reflection or
+metaprogramming appears to be needed.) Second, not all interesting SMCs
+are cartesian.
+
+We show how the advent of linear typing in Haskell lets us naturally
+target SMCs. Doing so simultaneously enables a reification mechanism
+which does not use any form of metaprogramming or support for
+reflection from the compiler.  The upshot is a library which lets us
+define SMC morphisms using linear functions.

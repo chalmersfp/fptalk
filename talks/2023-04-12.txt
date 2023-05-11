@@ -1,0 +1,47 @@
+On Wednesday, the 12th of April, James Koppel will give a guest talk!
+The talk will take place at 11:00 - 12:00 in EDIT 8103.
+
+Abstract:
+
+Programming languages researchers have developed many advanced tools
+that promise to greatly ease software engineering. Yet even
+conceptually simple tools are expensive to implement fully due to the
+complexity of the target language, and standard techniques tie an
+implementation to a particular target language. In order to make the
+development of advanced programming tools economical, these problems
+demand new techniques for decomposing the development of tools and
+automating portions of their construction, which I collectively dub
+“meta-metaprogramming."
+
+In this talk, I will present my work on new techniques and frameworks
+for making tools easier to build and more general, and tools built on
+them. First I will present Cubix, a "One Tool, Many Languages"
+framework that allows a single tool to quickly be written for multiple
+programming languages. We have used Cubix to build Yogo, a semantic
+search tool capable of finding equivalent patterns in C, Java, and
+Python from a single shared query. Second, I will present Mandate, the
+world's first control-flow graph generator generator, able to generate
+multiple varieties of CFG-generator given a programming language's
+formal semantics. Finally, I will present our ongoing work on ECTAs
+(equality-constrained tree automata), a new type of data
+structure/constraint-solver able to efficiently search large spaces of
+programs subject to certain constraints. We have used ECTAs to build
+two synthesizers for Haskell, Hectare and Spectacular, which solidly
+beat their pre-existing competitors (Hoogle+ and QuickSpec) with only
+a fraction the engineering-effort.
+
+Bio:
+
+After winning the "20 Under 20" Thiel Fellowship, Jimmy Koppel
+graduated early from Carnegie Mellon University to found Tarski
+Technologies, a startup building commercial program repair
+technology. In 2014, he joined Apptimize as the third employee, where
+he obtained six patents in the areas of binary modification and mobile
+A/B testing. He completed his Ph. D. in programming languages from MIT
+in 2021, with research focusing on ways to make programming tools
+easier to build and more general ("meta-metaprogramming").  As the
+founding partner of Mirdin, the Code Quality Company, he has trained
+over 250 professional software engineers at the advanced level, and
+has over 1 million views on his software design blog,
+Pathsensitive.com. His research has been profiled in the New York
+Times, the Boston Globe, Bloomberg, and Wired.

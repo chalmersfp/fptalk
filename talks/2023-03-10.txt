@@ -1,0 +1,15 @@
+On Friday Yinan is giving a talk at the FP seminar slot :) It is at
+11:00 in Analysen.
+
+Below is the abstract for her talk:
+
+Automated machine learning (AutoML) refers to the process of
+automating data-driven learning algorithms. Typically, this topic
+includes neural architecture search, hyperparameter optimization, and
+meta-learning. One key component of AuthoML is to automatically search
+for the optimal configuration of a machine learning algorithm, which
+requires defining and parameterizing the search space with a domain
+specific language. In this talk, I will provide a brief overview of
+AutoML and some challenges from this perspective. I am looking forward
+to receiving some feedback and exploring potential opportunities for
+future collaboration.

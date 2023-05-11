@@ -1,0 +1,55 @@
+On Friday at 11:00 we have a visitor that will give a talk on testing!
+The talk is in 8103.
+
+Title: Reflecting on Random Generation
+
+Abstract: Expert users of property-based testing often labor to craft
+random generators that encode detailed knowledge about what it means
+for a test input to be valid and interesting. Fortunately, the fruits
+of this labor can also be put to other good uses. In the bidirectional
+programming literature, for example, generators have been repurposed
+as validity checkers, while Python’s Hypothesis library uses them to
+shrink and mutate test inputs.
+
+To unify and generalize these uses (and more), we propose reflective
+generators, a new foundation for random data generators that can
+“reflect” on an input value to calculate the random choices that could
+have been made to produce it. Reflective generators combine ideas from
+two existing abstractions: free generators and partial monadic
+profunctors. They can be used to implement and enhance the
+aforementioned shrinking and mutation algorithms, generalizing them to
+work for any values that could have been produced by the generator,
+not just ones for which a trace of the generator’s execution is
+available. Beyond shrinking and mutation, reflective generators
+simplify and generalize a published algorithm for example-based
+generation; they can also be used as checkers and partial value
+completers, and test data producers like enumerators and fuzzers.
+
+----
+
+Thank you to everyone that came to my talk! I hope you enjoyed it.
+
+If you missed it, here are my slides:
+https://docs.google.com/presentation/d/1172giR-MPnYMlZPJomf_UedY15_2gEFSOGQjsRl1DSU/edit?usp=sharing
+I fully script myself as part of my preparation, so the speaker notes
+are comprehensive. For best effect, anytime there is a bold section in
+the speaker notes, progress the slides.
+
+You can also find our preprint here:
+https://harrisongoldste.in/papers/drafts/icfp-2023-reflective.pdf
+
+Following on from our discussion, I think that the section on
+expressiveness, and the details about our replication of the
+Hypothesis style shrinking will be of interest. The first clarifies
+what generators cannot be converted / what generator writing idioms
+don't fit into the reflective style; the second clarifies how we avoid
+the shrinking / mutation of choices impacting dependent choices.
+
+And if anyone is interested in talking to me further, I am here till
+Tuesday afternoon. My schedule is on this
+(https://docs.google.com/document/d/1lFaTTh2fvLSQDi02rgcQMbAQQkTSwaMuAf0b3J3gCDg/edit?usp=sharing)
+google doc. Please feel free to schedule yourself in.
+ 
+Best,
+Sam
+
