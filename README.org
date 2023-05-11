@@ -1,5 +1,5 @@
 * Chalmers informal FP-talks (2023)
 
-+ See file:talks.org and the file:talks/ subdirectory.
++ See [[file:talks.org][talks.org]] and the [[file:talks/][talks/]] subdirectory.
 
 + Older page (used until 2019): https://wiki.portal.chalmers.se/cse/pmwiki.php/FP/FPWeeklyMeeting
