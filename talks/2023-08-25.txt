@@ -1,0 +1,23 @@
+This Friday we will have two FP-talks. Both Matth and I are presenting at IFL23 next week and will give practice runs of our presentations.
+I have booked Analysen at 11, and if the streaming gear works, we will also stream the talks on Zoom
+
+I hope to see many of you there!
+Robert
+
+---
+
+Matthi
+
+Title: CSI: Haskell
+Abstract: In non-strict languages such as Haskell the execution of individual expressions in a program significantly deviates from the order in which they appear in the source code. This can make it difficult to find bugs related to this deviation, since the evaluation of expressions does not happen in the same order as in the source code. At the moment, Haskell errors focus on values being produced, whereas it is often the case that faults are due to values being consumed. However, in non-strict languages, values involved in a bug are often generated immediately prior to the evaluation of the buggy code. This creates a opportunity for evaluation traces, tracking recently evaluated locations to help establish the origin of values involved in faults. In this paper, we describe an extension of GHC’s Haskell Program Coverage with evaluation traces, recording recent evaluations in the coverage file, and reporting an evaluation trace alongside the call stack on exception. This lets us reconstruct the chain of events and locate the origin of the fault. As a case study, we applied our initial implementation to the nofib-buggy data set and found that some runtime errors greatly benefit from trace information.
+
+---
+
+Robert
+
+Title: QuickerCheck
+Abstract: Finding faults in complex software is not trivial, and writing unit tests that properly test a complex software will take an incredible amount of time. If you have a specification of how the software should behave, you can instead turn that specification into properties and generate random test data, and test that the specification is not violated for that data. Instead of spending valuable human-hours writing unit tests, we can now spend cheaper computer-hours running randomly generated tests. However, it might still take a non-trivial amount of time to run a meaningful number of tests.
+
+In this paper, we describe a new parallel run-time for QuickCheck, a Haskell EDSL for specifying and testing properties of programs. The new run-time evaluates individual properties in parallel, distributing all tests over the available cores. When a counterexample is found, it can be shrunk in parallel.
+
+The results indicate that there is a lot to gain in terms of performance when more cores are added and that the penalty of the new implementation when only one core is used, compared to the existing QuickCheck implementation, is low. When more cores are used, the new implementation can run many more tests in the same amount of time, ultimately finding bugs faster.
