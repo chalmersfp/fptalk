@@ -2,6 +2,7 @@
 | Calendar   | Name / [special] | Room booked |
 |------------+------------------+-------------|
 | [[file:talks/2023-08-25.txt][2023-08-25]]  | Matthi & Robert  | Analysen    |
+| [[file:talks/2023-09-25.txt][2023-09-25]]  | John Hui         | Analysen    |
 
 * FP talks 2023 spring semester
 |    Calendar | Name / [special]              | Room booked |

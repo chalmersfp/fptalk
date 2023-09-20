@@ -1,0 +1,32 @@
+Hej everyone!
+
+On Monday we have a visitor from Columbia University, John Hui. He will present some resent work that is published at MEMOCODE 2023, in collaboration with Stephen A. Edwards and Kyle J. Edwards (http://www.cs.columbia.edu/~sedwards/papers/hui2023timestamp.pdf). I think it will be of interest not just to us in the FP unit, but also the people in the CNS division. I have booked Analysen from 11:00 to 12:00, but there is also a zoom link (assuming the room equipment work): https://chalmers.zoom.us/j/67690149801 Password: fptalk
+
+I hope to see many of you there!
+
+Robert
+
+---
+
+Title: Timestamp Peripherals for Precise Real-Time Programming
+
+Abstract: On microcontrollers, timer devices provide high-precision timing,
+but that precision is lost when using high-level languages without
+suitable abstractions for temporal behavior. So, for timing-sensitive
+applications, programmers resort to low-level languages like C
+which lack expressiveness and safety guarantees. Other program-
+mers use specialized precision-timing hardware which is expensive
+and difficult to obtain.
+In this work, we achieve sub-microsecond precision from a high-
+level real-time programming language on the RP2040, a cheap,
+widely available microcontroller. Our work takes advantage of the
+RP2040’s Programmable I/O (PIO) devices, which are cycle-accurate
+coprocessors designed for implementing hardware protocols over
+the RP2040’s GPIO pins.
+We use the PIO devices to implement timestamp peripherals,
+which are input capture and output compare devices. We use times-
+tamp peripherals to mediate I/O from programs written in Sslang,
+a real-time programming language with deterministic concurrency.
+We show that timestamp peripherals help Sslang programs achieve
+the precise timing behavior prescribed by Sslang’s Sparse Synchro-
+nous Programming model.
