@@ -1,0 +1,6 @@
+
+
+Matthi & Robert will present stuff they saw at the TAROT 2023 summer school.
+
+Matthi: Andreas Zeller's ISLA tool for grammar-based fuzzing
+Robert: Manuel Rigger's relational database testing stuff, using query partitioning metamorphic relations
