@@ -1,6 +1,6 @@
 
 
-Matthi & Robert will present stuff they saw at the TAROT 2023 summer school.
+Matthi & Robert will present stuff they saw at the TAROT 2023 summer school. Analysen is booked, and here is the zoom link: https://chalmers.zoom.us/j/65219349276 Password: fptalk
 
 Matthi: Andreas Zeller's ISLA tool for grammar-based fuzzing
 Robert: Manuel Rigger's relational database testing stuff, using query partitioning metamorphic relations
