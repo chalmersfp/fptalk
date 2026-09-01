@@ -1,0 +1,9 @@
+speaker: "Koen Claessen"
+place: Analysen
+online: https://chalmers.zoom.us/j/69031210832
+date: 2025-12-12 11:00:00
+title: "Finding Smallest Median Networks for Input Sizes up to 27"
+abstract: |
+  We present a novel method for constructing small median networks, which are static networks of comparators that enable fast computation of medians on regular CPUs, GPUs, FPGAs, and in hardware. Median filters are one of the basic methods used in denoising, and thus are widely used in image processing, but also in real-time processing of for example LIDAR sensor data and astronomical data.
+  Our method for creating the networks reproduces and/or strictly improves on all previously known best median networks, including Paeth's (still) widely-used median network for 25 inputs from 1992 (used for denoising images with a 5x5 window). Paeth's network has 99 comparators and uses 24 parallel steps. In 2003, Sheeran improved this to a network with 96 comparators and 18 parallel steps. Our network has only 94 comparators and uses 15 parallel steps!
+  Our method employs some new decomposition methods that exploit *symmetry* and then uses Symbolic AI (aka a SAT-solver) to find the networks. The use of a complete search method also enables certain optimality guarantees.

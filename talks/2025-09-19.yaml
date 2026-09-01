@@ -1,0 +1,7 @@
+speaker: "John Camilleri"
+place: Analysen
+online: https://chalmers.zoom.us/j/65345326464
+date: 2025-09-19 11:00:00
+title: "Competitive coding in the classroom"
+abstract: |
+  I've been experimenting with using competitive coding in my lectures, where students write solutions to a simple game and their submissions are pitted against one another to find decide on a winner. In this talk you'll get to play one such little game I designed called Don't Stand Out! (too much), and I will talk about how it went when I tested it with my students. I'm sure many of you will have lots of ideas about how to improve it, as well as suggestions of other games that could be played in this way, and I'd love to hear them! Make sure to bring your laptops with you, there may or may not be a present for the winners...

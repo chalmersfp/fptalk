@@ -1,0 +1,11 @@
+speaker: "Alejandro Russo"
+place: Analysen
+online: https://chalmers.zoom.us/j/65345326464
+date: 2025-11-21 11:00:00
+title: "Bridging Static and Dynamic Analysis Through Faceted Interpretation"
+abstract: |
+  This talk explores a novel approach to combining static and dynamic program analysis using a faceted DSL embedded in Haskell. We present a language where values simultaneously carry both abstract (symbolic) representations and concrete (lazily-evaluated) computations, enabling seamless interleaving of static and dynamic reasoning. The key insight is that purely static analysis often encounters roadblocks—such as data-dependent control flow—where concrete execution becomes necessary to determine what to analyze next. Our interpreter addresses this by allowing symbolic execution to selectively force concrete evaluation through an explicit toSym operator, creating a hybrid analysis that adaptively switches between modes.
+  
+  We demonstrate how this approach handles challenging scenarios including conditional branches with symbolic guards and data-dependent filtering. Through several examples, we show that this faceted interpretation enables more precise static analysis by leveraging runtime information exactly when needed, while maintaining the benefits of symbolic reasoning where possible.
+  
+  This work is very much in progress.

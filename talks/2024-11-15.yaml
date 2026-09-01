@@ -1,0 +1,15 @@
+speaker: "Koen Claessen"
+place: Analysen
+date: TODO 11:00:00
+title: "Combining Functional Reactive Programming and Lustre"
+abstract: |
+  We are interested in methods for programming small IoT devices that run on batteries. We regard these as reactive real-time systems that (1) can react to external events that happen occasionally (such as sensors that trigger), (2) must have precise
+  timing behavior, and (3) are otherwise mostly asleep for power reasons. We have previously developed a language called Scoria (based on the Sparse Synchronous Model) that tries to fill this niche. However, Scoria is an imperative language with processes that
+  can be started dynamically, which means no guarantees about bounded memory and no easy route to formal verification.
+  
+  In this talk, we explore how we can use a more declarative approach to this problem, with run-time guarantees about timing and bounded memory behavior, and enabling formal verification easily. An obvious choice is to use Lustre; however the semantics (a clock
+  that always ticks) and typical implementations of Lustre do not fit well with only reacting to external events and otherwise being asleep. Functional Reactive Programming (FRP) provides key semantic concepts for declarative reasoning about reactive systems,
+  but its existing implementations are way too expressive to have any runtime guarantees close to the guarantees of Lustre. We have developed a restricted variant of FRP specifically targeted to be used in a Lustre-like language that allows for a declarative
+  style of programming reactive (and mostly at-rest) real-time systems while at the same time guaranteeing bounded memory use, and enabling easy formal verification.
+
+  These ideas have all been implemented in a rough prototype language embedded in Haskell called Frustre.

@@ -1,0 +1,7 @@
+speaker: "Nicolas Pietro Marie Audinet De Pieuchon"
+place: CSE EDIT 8103
+online: https://chalmers.zoom.us/j/65345326464
+date: 2025-10-17 11:00:00
+title: "Can You Tell? An LLM game in Haskell and PureScript"
+abstract: |
+  Last year I got an idea for a simple chat-based computer game involving Large Language Models (LLMs): if someone sent you a text message, could you tell if it was coming from a person or an LLM? Over the winter I implemented the game as a website with Haskell for the backend and PureScript for the frontend. In this talk I want to present the game to you, how I made it, and have you play a game or two!

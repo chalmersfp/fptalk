@@ -1,0 +1,7 @@
+speaker: "Henrik Jansson Valter"
+place: Analysen
+online: https://chalmers.zoom.us/j/65345326464
+date: 2025-10-31 11:00:00
+title: "Counting is hard"
+abstract: |
+  Signal probability is a fundamental concept in several areas of digital design. Although conceptually simple, computing it exactly is highly complex - as difficult as model counting. In this talk, I present methods for exact signal probability computation that build on formal verification techniques, mainly BDD-based symbolic simulation but also CNF model counters. We focus on combinational circuits driven by constrained uniform input distributions. The go-to tool for constrained BDD-based symbolic simulation is parametric substitution, for which I present a fundamental yet important property discovered during this work. I will also describe the engineering work of applying a CNF model counter to this problem, and sing the praises of property-based testing along the way.

@@ -1,0 +1,9 @@
+speaker: "Patrik Jansson"
+place: Analysen
+date: 2025-10-10 11:00:00
+title: "Domain-specific tensor languages"
+abstract: |
+  Tensor calculus uses a terse but effective language for expressing physical laws. It was instrumental already a century ago in the formulation of Einstein's general relativity. We have implemented two tensor DSLs embedded in Haskell, the conversions between them, and helper functions to view the tensors in Einstein index notation and as diagrams.
+  
+  The talk will be presented at ICFP 2025 and is based on a paper with the same title:
+  https://doi.org/10.1017/s0956796825000048

@@ -1,0 +1,8 @@
+speaker: "Peter Ljunglöf"
+place: Analysen
+online: https://chalmers.zoom.us/j/69606989059
+date: 2025-03-07 11:00:00
+title: "Fast corpus search with unary and binary indexes"
+abstract: |
+  To be able to search for patterns in annotated text corpora is crucial for many different research disciplines. However, searching for complex patterns in large corpora can take long time – sometimes several minutes or even hours.
+  We investigate how inverted indexes can be used for efficient searching in large annotated corpora, and in particular binary indexes. We show how corpus queries are translated into lookups in unary and binary inverted indexes, and give efficient strategies for combining the results using efficient set operations. In addition we discuss how to make use of binary indexes for more complex query types.

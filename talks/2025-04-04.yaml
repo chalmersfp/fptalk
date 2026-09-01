@@ -1,0 +1,8 @@
+speaker: "Inari Listenmaa"
+place: Analysen
+online: https://chalmers.zoom.us/j/69606989059
+date: 2025-04-04 11:00:00
+title: "Expressivity and ergonomy of Grammatical Framework"
+abstract: |
+  Grammatical Framework (GF) is a is a programming language for multilingual grammar applications.  One of GF's selling points is its superior expressivity compared to its alternatives (that are often context-free grammars), but the standard explanations for that sort of expressivity are either combinations of symbols that don't look even remotely like natural language, or Swiss German triple subordinate clauses about promising to help someone paint their house. If neither of these sounds like your use case, is it worthwhile to learn GF?
+  In the first part of this talk, I will first focus on GF's expressivity, focusing specifically on the spot in the Chomsky hierarchy that is interesting for natural language purposes. In the second part of the talk, I approach the question from the point of view of ergonomy. I argue that even if it is possible to express all of your domain with another tool, it might still be a more pleasant experience in GF.

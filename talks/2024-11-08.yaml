@@ -1,0 +1,8 @@
+speaker: "Kelsey Cotton"
+place: Analysen
+date: 2024-11-08 11:00:00
+title: "Browser-based live coding in Strudel"
+abstract: |
+  This presentation-tutorial is a practical session to introduce 
+  [Strudel](https://strudel.cc/) - a live coding platform and language originally built with Haskell, and ported to JavaScript. Strudel is a flexible language for coding music (and visuals) in the browser, and is open-source. In this presentation-tutorial, we will introduce the
+  language and engage hands-on with coding music and visuals. This session will be heavily practical, so please bring a laptop and headphones to fully engage with the interactive components of the session.

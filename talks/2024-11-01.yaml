@@ -1,0 +1,11 @@
+speaker: "Katya Voloshina"
+place: Analysen
+online: https://chalmers.zoom.us/j/68994623092
+date: 2024-11-01 11:00:00
+title: "Language Model Programming"
+abstract: |
+  The talk is based on the ESSLLI summer course I took this year.
+  While AI systems, particularly Large Language Models (LLMs), demonstrate impressive performance across a wide range of tasks, they still face significant challenges in areas like complex reasoning and following strict output constraints. A critical question is: how can users define desired outputs, and how can developers compose AI systems to achieve more accurate results?
+  One promising solution is Language Model Programming.
+  This approach focuses on constructing AI systems by combining various components, as well as designing and implementing the interaction between these components. It also attemps to relate LLM research to conventional programming. This talk is an overview of
+  recent work about how use of programming languages could improve training, fine-tuning, and decoding mechanisms.

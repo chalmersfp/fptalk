@@ -1,0 +1,8 @@
+speaker: Carl-Johan Seger
+place: Analysen
+online: https://chalmers.zoom.us/j/69031210832
+date: 2026-04-10 11:00:00
+title: "Symbolic Representations of Matrices"
+abstract: |
+  Vectors and matrices are fundamental data structures in Computer Science. The elements in a matrix are almost always stored explicitly, and only the structure of the matrix may be stored using more advanced data structures, e.g., for highly sparse matrices.  In this work, we store both the elements of the matrices and the structure implicitly using Binary Decision Diagrams (BDDs) and bit-vectors. We first show how this can provide quite efficient storage for various matrices. We then develop algorithms for all the usual matrix operations, e.g., transpose, addition, multiplication, etc. Finally, we demonstrate the use of these symbolic matrices in three different domains: image generation/recognition, machine learning, and finally for power estimation in sequential circuits.
+  This is joint work with my previous Ph.D. student Dhas and my current Ph.D. student Henrik.

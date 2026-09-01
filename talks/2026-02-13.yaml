@@ -1,0 +1,9 @@
+speaker: "Aarne Ranta"
+place: Analysen
+online: https://chalmers.zoom.us/j/69031210832
+date: 2026-02-13 11:00:00
+title: "Informath under the Hood"
+abstract: |
+  Informath is an emerging system for translating between formal and informal mathematics. It aims to generalize to all proof systems that can be encoded in dependent type theory, as well as to any kind of mathematical language written in textbooks and articles, either by itself or in combination with large language models.
+  The main underlying technologies of Informath are GF (Grammatical Framework), Dedukti (a logical framework designed to be a bridge between other frameworks), and Haskell (a language of choice for compiler-like tree processing). This FP talk will be informal but technical, diving into code details and welcoming hints from participants.
+  https://github.com/GrammaticalFramework/informath

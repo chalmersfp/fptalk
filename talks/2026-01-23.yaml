@@ -1,0 +1,7 @@
+speaker: "Krasimir Angelov"
+place: Analysen
+online: https://chalmers.zoom.us/j/9812840297?omn=65330093753
+date: 2026-01-23 11:00:00
+title: "Parsing with Diophantine Grammars"
+abstract: |
+  GF is a high-level programming language which is compiled to a low-level language called Parallel Multiple Context-Free Grammar. In this talk I will present a new low-level language called Diophantine Grammars (DG) and how it is used for parsing. The advantage of the new language is that it represents grammatical features such as gender, number, case, etc. explicitly. While other linguistic formalisms handle feature agreement with unification, in DG this is done by solving Linear Diophantine Equations. The grammars become more compact and the parser more efficient. It can also do partial parsing for ungrammatical sentences. If the time allows, I will also give a short sequel to Inari's talk where I briefly introduce dependent record types as a way to model sum types. The later is enabled by using DG.

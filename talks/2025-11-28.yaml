@@ -1,0 +1,7 @@
+speaker: "Alex Gerdes"
+place: Analysen
+online: https://chalmers.zoom.us/j/65345326464
+date: 2025-11-28 11:00:00
+title: "Generating feedback from rewrite strategies for interactive exercises"
+abstract: |
+  This talk introduces the IDEAS library, a framework for building domain reasoners that generate rich and semantically meaningful feedback for students. We explore the core concepts underlying the approach, such as rewrite rules, strategies, and exercises, and show how these components can be combined to create interactive educational tools. Through concrete examples, we demonstrate how to define rules and strategies, construct a domain reasoner, and expose feedback services that can be integrated into teaching environments.

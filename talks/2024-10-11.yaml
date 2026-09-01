@@ -1,0 +1,12 @@
+speaker: "Craig Ramsay"
+place: Analysen
+online: https://chalmers.zoom.us/j/64805325832
+date: 2024-10-11 11:00:00
+title: "Once bittern, twice shy: Revisiting hardware architectures for lazy functional languages with Heron"
+abstract: |
+  We present our FPGA-based processor, Heron, for evaluating non-strict functional
+  programs, as well as its concurrent garbage collector. Among the growing group
+  of contemporary projects, Heron offers an attempt at implementing a template
+  instantiation machine to compete with general purpose platforms (not
+  necessarily embedded). We'll touch on its architecture, reflect on our design
+  choices, and our plans towards a multi-core prototype.
