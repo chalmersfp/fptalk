@@ -1,0 +1,11 @@
+speaker: Karin Kejizer
+place: EDIT room
+date: 2010-06-18 15:15
+title: Raising Feldspar to a Higher Level
+abstract: |-
+  Feldspar [1] is a domain specific language (DSL) for digital signal processing (DSP) initially designed with baseband telecommunication systems in mind. Feldspar is a strongly typed high level functional language which during compilation is translated to hardware specific C code via an intermediate core language. Because it is a high level functional language it raises the level of abstraction for programmers compared to the language C.
+
+  During my thesis, I focused on developing high-level combinators for DSP functions (like the finite impulse response filter) and designing and implementing a matrix module for writing algebraic descriptions of transforms (like the discrete Fourier transform) in Feldspar. During this presentation I will show my results.
+
+  [1]
+  http://feldspar.inf.elte.hu/feldspar/

@@ -1,0 +1,10 @@
+speaker: Neil Jones
+place: EDIT room
+date: 2009-05-08 15:00
+title: Termination Analysis of the Untyped lambda-Calculus
+abstract: |-
+  An algorithm is developed that, given an untyped lambda-expression, can certify that its call-by-value evaluation  will terminate. It works by an extension of the ``size-change principle'' earlier applied to first-order programs. The algorithm is sound (and proven so) but not complete: some lambda-expressions may in fact terminate under call-by-value evaluation, but not be recognised as terminating.
+
+  The intensional power of size-change termination is reasonably high: It certifies as terminating all primitive recursive programs, and many interesting and useful general recursive algorithms including programs with mutual recursion and parameter exchanges, and  Colson's ``minimum'' algorithm. Further, the approach allows free use of the Y combinator, and so can identify as terminating a substantial subset of PCF.
+
+  Based on a paper "Termination Analysis of the Untyped lambda-Calculus" by Neil D. Jones  and Nina Bohr, DIKU, University of Copenhagen and IT University of Copenhagen

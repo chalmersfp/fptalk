@@ -1,0 +1,6 @@
+speaker: Troels Henriksen, DIKU, Copenhagen University
+place: EDIT 3364
+date: 2018-04-20 10:00
+title: Design and implementation of the Futhark programming language
+abstract: |-
+  Futhark is a data-parallel programming language under development at DIKU. The language supports (regular) nested data-parallelism and features an optimising compiler under rapid development. This presentation gives an introduction to Futhark and its compiler, with a particular focus on generation of efficient OpenCL GPU kernels and the steps automatically taken by the Futhark compiler to ensure fusion and efficient memory accesses.  In the presentation, I will discuss various tradeoffs of the code generation, and how a new versioning technique can defer to runtime the decision between different parallelisation strategies.

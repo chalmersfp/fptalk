@@ -1,0 +1,12 @@
+speaker: Jean-Philippe Bernardy
+place: EDIT room
+date: 2010-03-05 15:15
+title: Testing Polymorphic Properties
+abstract: |-
+  (Joint work with Koen Claessen and Patrik Jansson.)
+
+  How can one test a polymorphic property? The issue is that testing can only be performed on specific monomorphic instances, whereas parametrically polymorphic functions are expected to work for any type.
+
+  We present a schema for constructing a monomorphic instance for a polymorphic property, such that correctness of that single instance implies correctness for all other instances. We also give a formal definition of the class of polymorphic properties the schema can be used for. Compared with the standard method of testing such properties, our schema leads to a significant reduction of necessary test cases.
+
+  The talk is a preview of Jean-Philippe's talk at ESOP

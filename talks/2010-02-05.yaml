@@ -1,0 +1,8 @@
+speaker: Satnam Singh, Microsoft Research
+place: room EC
+date: 2010-02-05 15:15
+title: An Embedded DSL for the Data Parallel Programming of Heterogeneous Systems
+abstract: |-
+  This presentation introduces an embedded domain specific language (DSL) for data-parallel programming which can target GPUs, SIMD instructions on x64 multicore processors and FPGA circuits. This system is implemented as a library of data-parallel arrays and data-parallel operations with implementations in C++ and for .NET languages like C#, VB.NET and F#. We show how a carefully selected set of constraints allow us to generate efficient code or circuits for very different kinds of targets. Finally we compare our approach which is based on JIT-ing with other techniques e.g. CUDA which is an off-line approach as well as to stencil computations. The ability to compile the same data parallel description at an appropriate level of abstraction to different computational elements brings us one step closer to finding models of computation for heterogonous multicore systems.
+
+  Satnam Singh is a senior researcher at Microsoft Research. His work includes research on synthesis of FPGA circuits, hardware design using synchronous languages, heterogenous manycore architectures and concurrent and parallel programming in Haskell.

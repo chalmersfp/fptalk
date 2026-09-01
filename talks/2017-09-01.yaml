@@ -1,0 +1,8 @@
+speaker: Anton Ekblad
+place: EDIT 8103
+date: 2017-09-01 10:00
+title: A Meta-EDSL for Distributed Web Applications
+abstract: |-
+  We present a domain-specific language for constructing and configuring web applications distributed across any number of networked, heterogeneous systems. Our language is embedded in Haskell, provides a common framework for integrating components written in third-party EDSLs, and enables type-safe, access-controlled communication between nodes, as well as effortless sharing and movement of functionality between application components. We give an implementation of our language and demonstrate its applicability by using it to implement several important components of distributed web applications, including RDBMS integration, load balancing, and fine-grained sandboxing of untrusted third party code.
+
+  This is a dry run for my talk at Haskell Symposium '17, so please bring an extra helping of comments and opinions.

@@ -1,0 +1,6 @@
+speaker: Ross Paterson
+place: EDIT room (joint FP + ProgLog talk)
+date: 2009-11-11 13:15
+title: Applicative functors from left Kan extensions
+abstract: |-
+  Applicative functors define an interface that is more general, and correspondingly weaker, than that of monads.  First used in parser libraries, they are now seeing a wide range of applications. Left Kan extensions, familiar to functional programmers as a kind of existential type, are a source of a range of applicative functors that are not also monads.  There is also a generalized form involving arrows, which appears in the permutation parsers of Baars, Loh and Swierstra.

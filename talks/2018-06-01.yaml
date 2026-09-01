@@ -1,0 +1,14 @@
+speaker: Edvard Hübinette and Fredrik Thune, Chalmers
+place: EDIT 3364
+date: 2018-06-01 10:00
+title: Better Implicit Parallelism  (MSc Thesis presentation)
+abstract: |-
+  ApplicativeDo tries to remove the Monad binds where possible when desugaring Haskells' do-notation. It does this by looking at inter-statement dependencies and using the Applicative operator when it can; this introduces implicit parallelism in the code. Deciding which structure to generate is tricky, since many different are usually possible. Currently, this is solved with simple minimum cost analysis with an unit cost model, assuming each statement takes the same amount of time to evaluate.
+
+  At Facebook, Marlow et. al developed [Haxl](
+  https://github.com/facebook/haxl
+  ), a data-fetching library that can use applicative expressions for free parallelism. To our knowledge, it is the only library that does automatic parallelism on Applicative expressions.
+
+  By extending the cost model inside the ApplicativeDo algorithm for variable evaluation costs, and implementing weight annotations through optional programmer pragmas in GHC, we do smarter generation of code by prioritising parallelisation of heavy statements. This leads to quite nice speedups when using Haxl, with very little extra work for the programmer.
+
+  ApplicativeDo was introduced with Desugaring Haskells' do-notation Into Applicative Operations (Marlow, Peyton-Jones, Kmett, & Mokhov, Haskell Symposium 2016) Haxl was introduced with There Is No Fork (Marlow, Brandy, Coens, & Purdy, ICFP 2014)

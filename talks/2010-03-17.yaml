@@ -1,0 +1,16 @@
+speaker: Don Syme, Microsoft Research Cambridge
+place: Room EC
+date: 2010-03-17 15:15
+title: Parallel and Asynchronous Programming with F#
+abstract: |-
+  F# is a succinct and expressive typed functional programming language in the context of a modern, applied software development environment (.NET), and Microsoft will be supporting F# as a first class language in Visual Studio 2010. F# makes three primary contributions to parallel, asynchronous and reactive programming in the context of a VM-based platform such as .NET:
+
+  (a) functional programming greatly reduces the amount of explicit mutation used by the programmer for many programming tasks
+
+  (b) F# includes a powerful async construct for compositional reactive and parallel computations, including both parallel I/O and CPU computations, and
+
+  (c) async enables the definition and execution of lightweight agents without an adjusted threading model on the virtual machine.
+
+  In this talk, well look at F# in general, including some general coding, and take a deeper look at each of these contributions and why they matter.
+
+  Don Syme is a Principal Researcher at Microsoft Research, Cambridge, and is responsible for the design of the F# programming language. He has contributed extensively to the design of the .NET platform through.NET and C# generics and has a background in verification and machine-checked proof. His research focuses on the technical aspects of programming language design and implementation needed to make functional languages that are simpler to use, interoperate well with other languages and which incorporate aspects of object-oriented, asynchronous and parallel programming. His PhD is from the University of Cambridge, 1998.

@@ -1,0 +1,8 @@
+speaker: Abraham Wolk, University of Copenhagen
+place: EDIT Analysen
+date: 2019-09-13 10:00
+title: Towards a physically realistic universal model of parallel computation
+abstract: |-
+  Physical laws and the geometry of 3-dimensional Euclidean space put limitations on (1) the speed of information transmission and (2) the scalability of network topologies. Prevailing models of parallel computation do either not take these limitations into account, or they relegate them to free parameters of the model that may be instantiated according to the application at hand. While the latter option may yield useful insights when analyzing an algorithm intended to be run on a /particular/ machine for which the parameters may be approximated, it does not yield insight into the scalability of an algorithm beyond the particular machine in a physically realistic way.
+
+  In this talk I will present ideas towards the development of a model of parallel computation in which computation is conceived of as a program executing on top of an underlying parallel universal machine that can plausibly be realized physically. The hope is that by measuring the resource consumption (both time and hardware resources) of the underlying universal machine, one obtains a realistic prediction of the actual resources required to execute an algorithm, as well as an understanding of how the resource consumption scales in a physically realistic manner.

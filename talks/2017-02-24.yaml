@@ -1,0 +1,10 @@
+speaker: Ralf Lämmel
+place: EDIT 8103
+date: 2017-02-24 10:00
+title: The Haskell Road to Software Language Engineering and Metaprogramming
+abstract: |-
+  In this talk, I would like to sketch my upcoming textbook on software languages
+  http://www.softlang.org/book
+  while putting on the hat of a Haskell programmer. Overall, the book addresses many issues of software language engineering and metaprogramming: internal and external DSLs, object-program representation, parsing, template processing, pretty printing, interpretation, compilation, type checking, software analysis, software transformation, rewriting, attribute grammars, partial evaluation, program generation, abstraction interpretation, concrete object syntax, and a few more. Haskell plays a major role in the book in that Haskell is used for the implementation for all kinds of language processors, even though some other programming languages (Python, Java, and Prolog) and domain-specific languages (e.g., for syntax definition) are leveraged as well. I hope the talk will be interactive and help me to finish the material and possibly give the audience some ideas about FP- and software language-related education and knowledge management.
+
+  Slides: http://softlang.uni-koblenz.de/book/slides/HsSleMp.pdf

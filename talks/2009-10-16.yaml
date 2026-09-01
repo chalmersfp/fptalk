@@ -1,0 +1,8 @@
+speaker: Alejandro Russo
+place: room 5453
+date: 2009-10-16 15:00
+title: Integrity policies via a library in Haskell
+abstract: |-
+  Protecting critical data has become increasingly important for computing systems. Language-based technology have been developed over the years to achieve that purpose, leading to special-purpose languages that, in most of the cases, guarantee confidentiality of data, i.e. that secrets are not leaked. The impact of these languages in practice has been rather limited. Nevertheless, rather than producing a new language from scratch, it has been shown that confidentiality can be also guaranteed via a library, which makes this technology more likely to be adopted. Following this line, this work extends a library that provides confidentiality in order to consider another important aspect of security: integrity of data. Integrity of data seeks to prevent that programs destroy, accidentally or maliciously, information. We describe how to enforce two different kind of integrity policies: access control (e.g. certain files should not be written) and data-invariant-like predicates (e.g. sanitization of data) as well as some ideas about how to enforce information-flow integrity policies (e.g. user data does not corrupt or affect critical data pieces). A library that combines confidentiality and integrity policies has not been previously considered. Augmenting the set of enforceable policies develops further the changes for the library to be attractive for programmers. To evaluate our ideas, we propose the implementation of a case study.
+
+  This talk is based on a joint work-in-progress with Albert Diserholt.

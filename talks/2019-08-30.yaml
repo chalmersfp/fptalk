@@ -1,0 +1,9 @@
+speaker: Hendrik van Antwerpen, Delft University
+place: EDIT Analysen
+date: 2019-08-30 10:00
+title: Spoofax Language Workbench
+abstract: |-
+  Meta-languages exist to improve the development of (domain specific) programming languages. Language engineers define aspects of the language by writing a high-level, declarative specification. A language implementations is derived from the specification. In this talk I will talk about (a) Statix, a meta-language for  name binding and typing rules, and (b) ongoing work on generating random program terms from Statix specifications.
+
+  Immediately after the talk is a small workshop to play with Spoofax, the language workbench that contains, among other things, an implementation of Statix. We will do some interactive language development and play with some of the meta-languages of Spoofax by extending an existing language definition for STLC-with-Records with new syntactic constructs and typing rules. It is best to install Spoofax and get the workspace I prepared for this workshop beforehand, so we can focus on some hacking. See for instructions:
+  https://hendrik.van-antwerpen.net/talks/20190830-chalmers/

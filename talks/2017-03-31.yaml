@@ -1,0 +1,8 @@
+speaker: Alejandro Russo
+place: EDIT 3364
+date: 2017-03-31 10:00
+title: Building Secure Embedded Systems Using Language-based Techniques
+abstract: |-
+  Low-level languages, such as C / C ++, are highly used in industry to develop embedded systems. How to program these systems Involve internal details of the computer such as the use of memory pointers and manual handling of dynamic memory. The history of software development shows us that among the most common and difficult to correct errors is the presence of dangling pointers, that is, pointers that refer to invalid memory locations or that are no longer in use. When embedded systems are also concurrent, there are also race conditions problems. Wouldn't be beneficial for programmers that the compiler can help them to avoid such problems? (thus building a more secure system).
+
+  Rust is a language recently developed by Mozilla to develop systems that require high performance and a small execution environment (runtime). Part of the Firefox browser is already implemented in this language. Rust uses principles of programming languages ​​and implements a type-system capable to detect the possibility of entering invalid pointers and handles allocation of memory automatically without a garbage collector. In this talk, I will talk about the principles and philosophy behind Rust and how these could be used to build secure systems.

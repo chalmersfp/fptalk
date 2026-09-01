@@ -1,0 +1,8 @@
+speaker: Krasimir Angelov
+place: EDIT room
+date: 2010-04-16 15:15
+title: GF as functional-logic language
+abstract: |-
+  Grammatical Framework (GF) is a domain specific language for describing natural language grammars. Despite that GF is language with very specific application domain, it is also Turing complete and could be used to solve nontrivial tasks in a surprising way. The design of the language has a lot of common with other functional and logic programming languages, most notably: Agda, Haskell, Curry and Lambda Prolog. Curry is an interesting language which combines in a neat way the functional and the logical paradigms but still from type theoretic point of view this is not satisfactory because it doesn't exploit the Curry-Howard isomorphism. Thanks to the dependent types of GF, which relates it to Agda, and thanks to some other specifics in the type system, GF could also be classified as functional-logic language but the two paradigms in GF are combined in the expected way. The execution model of GF also has a lot of common with Lambda Prolog but to cover the full semantics of GF the virtual machine should work in two modes: narrowing and residuation. The residuation mode is something that could be seen in the virtual machine of Curry but not in Lambda Prolog.
+
+  In this seminar I will talk about my work in progress on a virtual machine for running GF applications. Not everything is in place yet but the pieces are starting to stick together. As a demo I will show how to solve the classical n-queens problem in GF. From the logical programming paradigm I use backtracking and from the functional paradigm I use efficient deterministic computations. From type theoretical point of view I define the type of all n-queens puzzles.

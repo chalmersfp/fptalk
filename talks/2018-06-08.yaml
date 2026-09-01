@@ -1,0 +1,6 @@
+speaker: Maximilian Algehed, Chalmers
+place: EDIT EA
+date: 2018-06-08 10:00
+title: Parametricity and Noninterference revisited
+abstract: |-
+  I will talk about a few new proofs of noninterference for variants of System F_\omega which make use of parametricity for dependent types. Unlike previous results I obtain parametricity-based proofs of noninterference for both static and dynamic enforcement of noninterference. The proofs make use of a parametricity formulation for PTS:s by Bernardy et al [1].. In their theory, a term in a PTS O gets translated into a term in another PTS M, O and M for Object and Meta, where the M terms represent theorems and proofs derived from the type and implementation of the terms in O. Our proofs make essential use of this separation of two systems to hide parts of secure data-types from the programmer. In our formulation, the M language constitutes both meta-language and trusted computing base.

@@ -1,0 +1,8 @@
+speaker: Carl Seger
+place: EDIT 8103
+date: 2017-02-17 10:00
+title: 'From Abstract Specification to Detailed Implementation: How to Get Accelerator Based Code Right'
+abstract: |-
+  In the last decade, the rapid growth in single-threaded performance of computers has drastically slowed down. One approach to speed up a single threaded application is to use custom hardware for part of it. Unfortunately, fully custom hardware is extremely expensive to develop, becomes obsolete quickly, and is very inflexible. Field Programmable Gate Arrays (FPGAs) have emerged providing a good compromise between the generality of CPUs and the performance of custom hardware. As FPGAs have started to be more tightly integrated with CPUs, it has become feasible to achieve several orders of magnitude speedup on specific single threaded application and such accelerators are starting to be widely deployed. A very real challenge for these mixed software/hardware systems is how to ensure the correctness of the solution. Compounding this is the difficulty of debugging custom hardware (be it FPGA or ASIC based).  In this talk I will discuss an approach, inspired by earlier work on effective hardware design, that I am pursuing during my visit here. More specifically I am advocating an integrated design and verification approach so that when a final implementation is reached, then so is a formal proof of its correctness. The talk is very much describing work in progress and I hope for many questions!
+
+  Slides: CarlSeger20170217.pdf (https://wiki.portal.chalmers.se/cse/uploads/FP/CarlSeger20170217.pdf)

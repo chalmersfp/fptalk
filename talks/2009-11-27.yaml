@@ -1,0 +1,6 @@
+speaker: Koen Claessen
+place: EDIT room
+date: 2009-11-27 15:00
+title: FUI - A Functional GUI Library
+abstract: |-
+  In this talk, I present ongoing work (well, results after a few afternoons of hacking) on FUI, a new GUI library for Haskell. There have been many designs and implementations of GUI libraries for Haskell over the years. Some are functional/declarative in spirit(such as Fudgets, Gadgets, and solutions based on Functional ReactiveProgramming (FRP)), others give an imperative (IO) interface (such as TkGofer/Yahu, Haggis, WxHaskell, and Gtk2Hs). The aim of FUI is to combine the good ideas from Fudgets, Gadgets, and FRP (declarative feel), and to avoid the more cumbersome features (loop combinators, mixing layout with functionality). The main motivation for FUI is because it is so much fun hacking on these things, but a secondary motivation is that I tried to create a GUI library that would be possible to use in a first-year course on Haskell. I will also discuss the requirements on the library if it is going to be used for teaching, and if I feel they have been met or not.

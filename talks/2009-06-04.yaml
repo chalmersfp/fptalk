@@ -1,0 +1,8 @@
+speaker: Jean-Philippe Bernardy
+place: room 5453
+date: 2009-06-04 10:00
+title: 'Testing Polymorphic Functions: The Initial View'
+abstract: |-
+  Many useful functions are parametrically polymorphic. Testing can only be applied to monomorphic instances of polymorphic functions. If we verify correctness of one instance, what do we know of all the other instances? We present a schema for constructing a monomorphic instance such that correctness of that single instance implies correctness for all other instances.
+
+  This is joint work with Koen Claessen and Patrik Jansson.

@@ -1,0 +1,6 @@
+speaker: Wouter Swierstra
+place: EDIT room
+date: 2009-06-12 15:00
+title: Data types à la carte
+abstract: |-
+  In this talk, I will describe a technique in Haskell for assembling both data types and functions from isolated individual components. Time permitting, I'd like to show how the same technology can be used to combine free monads and, as a result, structure Haskell's monolithic IO monad.

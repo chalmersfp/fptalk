@@ -1,0 +1,8 @@
+speaker: Thorsten Berger
+place: EDIT 8103
+date: 2017-01-27 10:00
+title: Virtual Platform - Flexible and Truly Incremental Engineering of Highly Configurable Systems
+abstract: |-
+  Customisation is a general trend. An ever-increasing diversity of hardware and many new application scenarios for software, such as cyber-physical systems, demand software systems that support variable stakeholder requirements. Two opposing approaches are commonly used to create variants: software clone&own and software configuration. Organizations often start with the former, which is cheap, flexible, and supports quick innovation, but leads to redundancies and does not scale. The latter scales by establishing an integrated platform that shares software assets between variants, but requires high up-front investments or risky migration processes. So, could we have a robust approach that allows an easy transition or even combines the benefits of both approaches?
+
+  In the talk, I will discuss the virtual platform a VR-funded project that aims at building a method and tool suite supporting a truly incremental development of variant-rich systems, exploiting a spectrum between both opposing approaches. I will present the main underlying idea, important concepts of variant-rich systems, and the project plan. I will also present some of my previous research in the area of variability modeling, model synthesis, and static program analysis that is relevant for the project.

@@ -1,0 +1,6 @@
+speaker: Wouter Swierstra
+place: EDIT room
+date: 2009-03-06 15:00
+title: The Hoare State Monad
+abstract: |-
+  Monads help structure functional programs. Yet proofs about monadic programs often start by expanding the deﬁnition of return and bind. This seems rather wasteful. If we exploit this structure when writing programs, why should we discard it when we writing proofs? I will show how to verify functional programs inhabiting the state monad, with the express aim of taking advantage of the monadic structure of our programs to guide the veriﬁcation process.

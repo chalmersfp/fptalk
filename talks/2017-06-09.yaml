@@ -1,0 +1,6 @@
+speaker: Linnéa Andersson and Andreas Wahlström
+place: EDIT 8103
+date: 2017-06-09 10:00
+title: Evaluation of a new recursion induction principle
+abstract: |-
+  Structural induction is a powerful tool for proving properties about functions with recursive structure, but it is useless when the functions do not preserve the structure of the input. Many of today's cutting-edge theorem provers use structural induction, which makes it impossible for them to prove properties about non-structurally recursive functions. We introduce a new induction principle, where the induction is done over a function application. This principle makes it possible to prove properties about non-structurally recursive functions.
