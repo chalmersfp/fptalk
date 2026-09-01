@@ -1,0 +1,8 @@
+speaker: "[Phil Wadler](http://homepages.inf.ed.ac.uk/wadler/) (University of Edinburgh)"
+place: Analysen
+recording: https://youtu.be/Dq0WFigax_c
+date: 2020-06-08 16:00:00
+title: "Featherweight Go"
+abstract: |
+  We describe a design for generics in Go inspired by previous work on Featherweight Java by Igarashi, Pierce, and Wadler. Whereas subtyping in Java is nominal, in Go it is structural, and whereas generics in Java are defined via erasure, in Go we use monomorphisation. Although monomorphisation is used widely, we are one of the first to formalise it. Our design also supports a solution to The Expression Problem.
+  Joint work with: Robert Griesemer, Raymond Hu, Wen Kokke, Julien Lange, Ian Lance Taylor, Bernardo Toninho, and Nobuko Yoshida.
