@@ -1,6 +1,7 @@
 speaker: "Nicolas Pietro Marie Audinet De Pieuchon"
 place: CSE EDIT 8103
 online: https://chalmers.zoom.us/j/65345326464
+recording: https://www.youtube.com/watch?v=7O4hXK_3K54
 date: 2025-10-17 11:00:00
 title: "Can You Tell? An LLM game in Haskell and PureScript"
 abstract: |
