@@ -1,6 +1,0 @@
-speaker: Joel Svensson, RISE
-place: EDIT Analysen
-date: 2019-01-18 10:00
-title: A Lisp-like interpreter on ZYNQ ARM+FPGA
-abstract: |-
-  This talk, more of a demonstration perhaps, is about a just-for-fun hobby project that I work on as an educational exercise for myself. I am working on an interpreter for a lisp-like language that I intend to run on a ZYNQ ARM+FPGA (on the ARM core). Apart from learning about implementation of lisp-like languages I hope to gain the benefit of having a bare-metal REPL to assist me when I play with my development board. This is work-in-progress so tips and ideas are greatly appreciated.

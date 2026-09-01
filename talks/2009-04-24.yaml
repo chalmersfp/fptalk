@@ -1,6 +1,0 @@
-speaker: Nick Smallbone
-place: room 5453
-date: 2009-04-24 15:00
-title: 'QuickSpec: Formal Specifications for Free'
-abstract: |-
-  I will talk about QuickSpec, a tool developed by Koen, John and me that generates algebraic specifications from functional programs. QuickSpec uses no theorem proving, only simple techniques based on testing.

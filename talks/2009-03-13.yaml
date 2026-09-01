@@ -1,6 +1,0 @@
-speaker: Jean-Philippe Bernardy
-place: EDIT room
-date: 2009-03-13 15:00
-title: Purely Functional Incremental Parsing
-abstract: |-
-  I'll give a summary of the techniques used in the parsing library developed for the Yi editor. Then I propose to detail how both incremental and lazy parsing can be combined in a combinator library.

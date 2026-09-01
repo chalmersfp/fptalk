@@ -1,8 +1,0 @@
-speaker: John Hughes, Chalmers
-place: EDIT Analysen
-date: 2018-10-05 10:00
-title: Testing Statistical Properties
-abstract: |-
-  Randomised algorithms (such as QuickCheck itself!) require choices to be made with a given probability. Such algorithms are harder to test, because testing requires estimating probabilities in a statistically sound way. In this talk Ill explore ways to include statistical properties in property-based tests, based on work that Nick Smallbone and I have done recently, with inspiration from a Quviq customer.
-
-  Slides: hughes_statistical_properties.pdf (https://wiki.portal.chalmers.se/cse/uploads/FP/hughes_statistical_properties.pdf)

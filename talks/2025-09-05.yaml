@@ -1,7 +1,0 @@
-speaker: "Erik Aerts"
-place: Analysen
-online: https://chalmers.zoom.us/j/9812840297
-date: 2025-09-05 11:00:00
-title: "AI-based detection of worsening heart failure from low-resolution telemonitoring data"
-abstract: |
-  This talk will entail a presentation of a collaborative project between our research team and Sahlgrenska Academy. The project is centered around heart failure: major healthcare challenge due to its high comorbidity burden, aging patient population, and frequent hospitalizations. To handle the population with these concerns, telemonitoring offers a promising approach to managing heart failure patients by early detection of health deterioration from home. Developing autonomous systems to detect signs worsening in telemonitoring data is of great interest to reduce the workload of healthcare personnel. In this project, we propose the TRACER model (a Transformer with Contrastive Event Representation) designed to detect rare hospitalization events in low-resolution and irregularly sampled telemonitoring data. During the FP talk, I will dive into detail on how the model is structured, how it has performed and future plans for the topic.

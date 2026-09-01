@@ -1,8 +1,0 @@
-speaker: Lennart Augustsson, Standard Chartered Bank
-place: room EC
-date: 2010-01-29 15:15
-title: O, Partial Evaluator, Where Art Thou?
-abstract: |-
-  Partial evaluation is now a quite old idea, and it has been implemented many times. Partial evaluation is also very widely applicable; almost every problem in computing could use it. But widely used partial evaluators are nowhere to be seen. Why is that? In this talk I will give some examples of where I have used partial evaluation during 15 years of using Haskell commercially. I will give my wish list for a partial evaluator I could actually use (instead of rewriting it over and over), and also contrast this with what is done in the research community.
-
-  Lennart Augustsson is a person that turns research in programming languages into practice. He currently works at the Modelling and Analytics Group at Standard Chartered Bank designing domain-specific programming languages used for quantitative modelling. He is known as the author of Cayenne programming language, one of the first Haskell compilers - HBC and as coauthor of Bluespec, a hardware description language. He is also a three-time winner of the Obfuscated C Code Contest.

@@ -1,6 +1,0 @@
-speaker: Jan Rochel
-place: room 5453
-date: 2009-05-29 15:00
-title: Very Lazy Evaluation
-abstract: |-
-  In the talk I will present my diploma thesis, which introduces a new execution model for non-strict, functional programming languages. It relies on a new concept in which function arguments are handled more lazily than in existing graph-reduction based models. This leads to a new type of abstract machine that promises very efficient program execution. A proof-of-concept implementation demonstrates the applicability of the approach.

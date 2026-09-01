@@ -1,9 +1,0 @@
-speaker: "Katya Voloshina"
-place: Analysen
-online: https://chalmers.zoom.us/j/66254610335
-date: 2026-02-20 11:00:00
-title: "Library Learning for Grammatical Framework: Inferring Syntax from Universal Dependencies"
-abstract: |
-  Developing formal grammars is a time-consuming process, which often requires proficiency in the target language. At the same time, annotated corpora such as Universal Dependencies already encode grammatical information implicitly.
-  
-  In this talk, we present a method for the automatic generation of a subset of Resource Grammar Library (RGL) modules in Grammatical Framework (GF). Our approach infers the concrete implementations of functions specified in the GF abstract syntax by learning from corpus data. Guided by types of function arguments, we use decision trees to model the syntactic rules. The resulting system enables automatic construction of RGL components directly from annotated data.

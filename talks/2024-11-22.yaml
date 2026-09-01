@@ -1,9 +1,0 @@
-speaker: "Yinan Yu"
-place: Analysen
-date: 2024-11-22 11:00:00
-title: "Personalized Artificial Intelligence: Optimization and Applications"
-abstract: |
-  In this talk, I will provide an overview of my research focused on advancing personalized AI systems. Personalization involves adapting AI to the unique needs and contexts
-  of individual users or entities, ensuring greater relevance and usability. This involves addressing several key challenges, including reducing data requirements to handle distribution shifts, minimizing model size for efficiency, developing specialized representation
-  learning techniques to extract meaningful insights from data, decentralizing and streamlining training processes, and establishing robust, scalable frameworks for data governance. I will discuss how my research develops and integrates these elements to drive
-  the innovation and implementation of personalized AI solutions.

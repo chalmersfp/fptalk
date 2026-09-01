@@ -1,6 +1,0 @@
-speaker: Regina Hebig
-place: EDIT 8103
-date: 2017-06-02 10:00
-title: "Building DSLs with Modelling Techniques \x96 What we teach and what our students make out of it"
-abstract: |-
-  We teach DSL development in the software engineering program as well as in the WASP program to masters students and practitioners. In doing so, we focus on modelling techniques, such as metamodeling, Xtext, OCL, code generation, and model transformation. In the talk we will provide an overview about these techniques and discusses how far students are able to adopt and use them. For that, we will show examples of DSLs that were created during the courses.

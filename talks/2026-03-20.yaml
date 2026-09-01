@@ -1,9 +1,0 @@
-speaker: Ulf Norell & Maximilian Algehed
-place: Analysen
-online: https://chalmers.zoom.us/j/66254610335
-date: 2026-03-20 11:00:00
-title: "Making computers play video games: Writing a StarCraft 2 bot in Haskell"
-abstract: |
-  StarCraft 2 is a real-time strategy game that is played as a professional e-sport. It also has an active bot scene, with a 24/7 ladder and regular tournaments [1]. We'll talk about the game, and why writing a bot for it is a fun and interesting problem, and show how we solved some of the many (many) interesting subproblems in our Haskell bot Xena.
-
-  [1] https://aiarena.net/

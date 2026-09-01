@@ -1,9 +1,0 @@
-speaker: "[Benjamin Pierce](https://www.cis.upenn.edu/~bcpierce/) (UPenn)"
-place: Analysen
-recording: https://youtu.be/dfZ94N0hS4I
-date: 2020-05-18 16:00:00
-title: "Backtracking Generators for Random Testing"
-abstract: |
-  QuickCheck-style property-based testing relies on random generators that produce well-distributed test data. When the properties under test involve sparse preconditions, test generators must be written so as to produce constrained test data satisfying these preconditions. But what should such generators do when choices made early on render later constraints unsatisfiable? How can generation effort be reused, both when failure is a possibility and, more generally, when parts of a complex test are relatively expensive to generate? The natural answer to all these questions is to use backtracking.
-  
-  We propose a new generator abstraction, extending QuickCheck generators with local backtracking by enriching the key Gen monad to support backtracking under the hood; and we show, in this setting, how local backtracking can significantly improve end-to-end bug-finding performance in two case studies. We show, first, that adding a small amount of backtracking improves the performance of a generator for well-typed System F terms by 1.6× on average. When generating System F terms, backtracking allows us to avoid completely discarding generation effort in the presence of uninhabitable types, which we find allows us to produce larger, more effective test cases—requiring 2.1× fewer tests, on average, to discover a bug. Second, we show that adding backtracking to an existing, highly tuned generator for random machine states in a testing framework for dynamic information flow control monitors allows us to amortize an expensive step in test-case generation, improving bug-finding performance by 3.9× with only a tiny change in the generator.

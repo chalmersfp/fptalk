@@ -1,7 +1,0 @@
-speaker: Nicholas Smallbone
-place: Analysen
-online: https://chalmers.zoom.us/j/66254610335
-date: 2026-03-13 11:00:00
-title: "Inside Twee: writing Haskell like it's C"
-abstract: |
-  The best automated theorem provers have traditionally been written in C or C++ for performance, with careful attention to low-level details such as data representation. My own prover Twee matches these provers for performance despite being written in Haskell. To do so it needs to pay the same attention to low-level details, so the core data structures in Twee are quite ugly. Nonetheless we can build abstractions on top of this so that the rest of the system is written as idiomatic Haskell. I will show some of the design of Twee and how (at least for theorem proving) GHC allows us to write high-level code over low-level data representations.

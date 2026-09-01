@@ -1,6 +1,0 @@
-speaker: Anders Mörtberg
-place: EDIT room
-date: 2010-03-26 15:15
-title: Implementing a functional language with type inference
-abstract: |-
-  I have implemented a small functional programming language with type inference as a project in the Advanced Functional Programming course. The type system has unit, product and sum types. The language also supports general recursion and uses call-by-value as evaluation strategy.

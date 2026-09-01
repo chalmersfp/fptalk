@@ -1,8 +1,0 @@
-speaker: Herbert Lange, Chalmers
-place: EDIT 8103
-date: 2019-04-12 10:00
-title: Restricting grammars to reduce ambiguity
-abstract: |-
-  Formal grammars are useful tools to describe languages both in computer science and computational linguistics. To describe natural languages large-scale grammars are necessary, e.g. the Grammatical Framework Resource Grammar Library. But with increasing size and complexity of a grammar, more and more ambiguity in the analyses arises, which is undesirable for specific applications.
-
-  In this talk I will look at restricting a formal grammar in a way that it describes exactly a language-specific fragment of the original language and this fragment can be given in the form of a set of examples. The resulting grammars will be specifically optimised to avoid ambiguous analyses. The focus of the talk will be on natural language applications but the methods I will present are generic and can be of general interest.

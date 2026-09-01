@@ -1,6 +1,0 @@
-speaker: Michał Pałka
-place: room 5453
-date: 2009-03-20 15:00
-title: Finding Race Conditions in Erlang with QuickCheck and PULSE
-abstract: |-
-  I will present a user-level scheduler which, in combination with QuickCheck and a trace visualizer, can be used to debug concurrent Erlang programs giving a high chance for finding concurrency bugs in unit testing.

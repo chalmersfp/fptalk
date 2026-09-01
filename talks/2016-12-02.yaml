@@ -1,9 +1,0 @@
-speaker: Shayan Najd
-place: EDIT 3364
-date: 2016-12-02 11:00
-title: Trees That Grow
-abstract: |-
-  I'll talk about my recent work with Simon Peyton Jones on extensible data types in Haskell. We study the notion of extensibility in functional data types, as a new approach to the problem of decorating abstract syntax trees with additional information. We observed the need for such extensibility while redesigning the data types representing Haskell abstract syntax inside Glasgow Haskell Compiler (GHC). Specifically, we describe a programming idiom that exploits type-level functions to allow a particular form of extensibility. The approach scales to support existentials and generalised algebraic data types, and we can use pattern synonyms to make it quite convenient in practice.
-
-  Slides: Attach:FPDec2016.pdf (https://wiki.portal.chalmers.se/cse/uploads/FP/FPDec2016.pdf)
-  Paper: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/trees-that-grow.pdf

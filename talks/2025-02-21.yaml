@@ -1,9 +1,0 @@
-speaker: "Nicholas Smallbone"
-place: Analysen
-online: https://chalmers.zoom.us/j/68073867839
-date: 2025-02-21 11:00:00
-title: "Finding Bugs in a Dictionary"
-abstract: |
-  The new edition of the Swedish spelling dictionary SAOL (Svenska Akademiens ordlista) will be published early next year. I have been helping out by writing automatic tests to find mistakes in the dictionary. Although it is hard at first to see how to specify
-  a dictionary, there are a surprising number of things that can be formally checked. I will talk about what I have tested, the bugs I have found, the troubles with testing unstructured data, and (perhaps) about what a library for property-based testing of the
-  dictionary could look like.

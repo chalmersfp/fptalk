@@ -1,6 +1,0 @@
-speaker: Matthías Páll Gissurarson, Chalmers
-place: EDIT EA
-date: 2018-05-25 10:00
-title: Suggesting Valid Hole Fits for Typed-Holes (Master Thesis defence)
-abstract: |-
-  Most programs are developed from some sort of specification, and type systems allow programmers to communicate part of this specification to the compiler via the types. The types can then be used to verify that the implementation matches this partial specification. But can the types be used to aid programmers during development, beyond verification? In this talk I will defend my master's thesis, titled "Suggesting Valid Hole Fits for Typed-Holes" and present a lightweight, practical extension to the typed-holes of GHC that improves user experience and facilitates a style of programming called "Type-Driven Development".
