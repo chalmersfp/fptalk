@@ -72,6 +72,10 @@
     </section>
   {{ end }}
 
+  <a href="{{ with .OutputFormats.Get "Event" }}{{ .RelPermalink }}{{ end }}">
+    Add to calendar
+  </a>
+
   <section class="talk-abstract">
     <h2>Abstract</h2>
 

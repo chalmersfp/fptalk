@@ -1,0 +1,5 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Functional Programming Seminar//EN
+{{ partial "talk-event.ics" . }}
+END:VCALENDAR

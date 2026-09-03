@@ -1,0 +1,15 @@
+BEGIN:VEVENT
+UID:{{ .Title | urlize }}@fp.chalmers.se
+DTSTART;TZID=Europe/Stockholm:{{ .Date.Format "20060102T150405" }}
+{{/* Compute the end time. We can use the "duration" field of each entry, or default to 60 if absent. */}}
+{{- $duration := 60 -}}
+{{- with .Params.duration -}}
+     {{- $duration = . -}}
+{{- end -}}
+{{- $end := .Date.Add (time.ParseDuration (printf "%dm" $duration)) -}}
+DTEND;TZID=Europe/Stockholm:{{ $end.Format "20060102T150405" }}
+SUMMARY:{{ partial "ics-format" .Title }}
+LOCATION:{{ partial "ics-format" .Params.place }}
+DESCRIPTION:Speaker: {{ partial "ics-format" .Params.speaker }}
+URL:{{ .Permalink }}
+END:VEVENT
