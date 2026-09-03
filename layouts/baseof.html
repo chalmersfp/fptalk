@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} · {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  {{ $style := resources.Get "scss/main.scss" | css.Sass | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ .Site.Home.RelPermalink }}">
+        {{ .Site.Title }}
+      </a>
+
+      <nav>
+        <a href="{{ .Site.Home.RelPermalink }}">Home</a>
+        <a href="/archive/">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+</body>
+</html>

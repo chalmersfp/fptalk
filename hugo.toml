@@ -1,0 +1,4 @@
+baseURL = "https://chalmersfp.github.io/"
+languageCode = "en"
+title = "Functional Programming Seminar Talks"
+contentDir = "talks"

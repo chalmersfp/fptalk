@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section class="archive">
+  <h1>Archive</h1>
+
+  {{ range .Site.RegularPages.GroupByDate "2006" }}
+    <section class="archive-year">
+      <h2>{{ .Key }}</h2>
+
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "talk-row.html" . }}
+      {{ end }}
+    </section>
+  {{ end }}
+</section>
+
+{{ end }}

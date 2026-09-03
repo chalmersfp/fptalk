@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+
+  <p>
+    Functional programming talks at Chalmers University of Technology
+    and the University of Gothenburg.
+  </p>
+</section>
+
+{{ $today := now.Format "2006-01-02" }}
+
+{{ $upcoming := slice }}
+{{ $recent := slice }}
+
+{{ range .Site.RegularPages.ByDate }}
+  {{ $talkDate := .Date.Format "2006-01-02" }}
+
+  {{ if ge $talkDate $today }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ end }}
+{{ end }}
+
+{{ range .Site.RegularPages.ByDate.Reverse }}
+  {{ $talkDate := .Date.Format "2006-01-02" }}
+
+  {{ if lt $talkDate $today }}
+    {{ $recent = $recent | append . }}
+  {{ end }}
+{{ end }}
+
+{{ with $upcoming }}
+<section class="upcoming">
+  <h2>Upcoming Talks</h2>
+
+  {{ range . }}
+    {{ partial "talk-row.html" . }}
+  {{ end }}
+</section>
+{{ end }}
+
+{{ with first 3 $recent }}
+<section class="recent">
+  <h2>Recent Talks</h2>
+
+  {{ range . }}
+    {{ partial "talk-row.html" . }}
+  {{ end }}
+</section>
+{{ end }}
+
+{{ end }}

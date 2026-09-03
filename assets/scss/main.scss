@@ -1,0 +1,228 @@
+$background: #f7f7f5;
+$surface: #ffffff;
+$text: #202020;
+$muted: #666666;
+$border: #d8d8d4;
+$accent: #5b3f70;
+
+$content-width: 60rem;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  sans-serif;
+
+  line-height: 1.6;
+  color: $text;
+  background: $background;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: $accent;
+  text-underline-offset: 0.15em;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+.wrap {
+  width: calc(100% - 2rem);
+  max-width: 68rem;
+  margin-inline: auto;
+}
+
+.site-header {
+  background: $surface;
+  border-bottom: 1px solid $border;
+
+  .wrap {
+    padding-block: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    color: $text;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.site-title {
+  color: $text;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main {
+  padding-block: 4rem 6rem;
+}
+
+.talk {
+  max-width: $content-width;
+}
+
+.talk-header {
+  margin-bottom: 3rem;
+
+  h1 {
+    margin: 0.25rem 0 0.75rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+}
+
+.talk-date {
+  margin: 0;
+  color: $muted;
+  font-size: 0.95rem;
+}
+
+.talk-speaker {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.talk-details {
+  margin-block: 3rem;
+
+  dl {
+    margin: 0;
+    border-top: 1px solid $border;
+  }
+
+  dl > div {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 1rem;
+    padding-block: 0.75rem;
+    border-bottom: 1px solid $border;
+  }
+
+  dt {
+    color: $muted;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.password-hint {
+  margin-left: 0.4rem;
+  color: $muted;
+}
+
+.talk-resources {
+  margin-block: 3rem;
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.3rem;
+  }
+}
+
+.talk-abstract {
+  margin-top: 4rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.prose {
+  font-size: 1.05rem;
+  text-align: justify;
+  hyphens: auto;
+
+  p {
+    margin-block: 0 1.25rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+
+  pre {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 36rem) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .talk-details dl > div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+
+.hero {
+  max-width: 44rem;
+  margin-bottom: 4rem;
+}
+
+.upcoming,
+.recent,
+.archive {
+  max-width: 52rem;
+}
+
+.talk-row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 2rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid $border;
+
+  time {
+    color: $muted;
+  }
+
+  h3 {
+    margin: 0;
+
+    a {
+      color: $text;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p {
+    margin: 0.25rem 0 0;
+    color: $muted;
+  }
+}
