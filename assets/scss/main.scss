@@ -5,18 +5,20 @@ $muted: #666666;
 $border: #d8d8d4;
 $accent: #5b3f70;
 
-$content-width: 60rem;
+$content-width: 72rem;
+$sidebar-width: 19rem;
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: system-ui,
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 
   line-height: 1.6;
   color: $text;
@@ -38,7 +40,7 @@ a {
 
 .wrap {
   width: calc(100% - 2rem);
-  max-width: 68rem;
+  max-width: 72rem;
   margin-inline: auto;
 }
 
@@ -78,8 +80,22 @@ main {
   padding-block: 4rem 6rem;
 }
 
+
+/* Talk page */
+
 .talk {
   max-width: $content-width;
+}
+
+.talk-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) $sidebar-width;
+  gap: 4rem;
+  align-items: start;
+}
+
+.talk-main {
+  min-width: 0;
 }
 
 .talk-header {
@@ -87,7 +103,7 @@ main {
 
   h1 {
     margin: 0.25rem 0 0.75rem;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.7rem, 3vw, 2.8rem);
     line-height: 1.1;
     letter-spacing: -0.025em;
   }
@@ -100,57 +116,17 @@ main {
 }
 
 .talk-speaker {
-  margin: 0;
   font-size: 1.3rem;
-}
 
-.talk-details {
-  margin-block: 3rem;
-
-  dl {
+  p {
     margin: 0;
-    border-top: 1px solid $border;
-  }
-
-  dl > div {
-    display: grid;
-    grid-template-columns: 7rem 1fr;
-    gap: 1rem;
-    padding-block: 0.75rem;
-    border-bottom: 1px solid $border;
-  }
-
-  dt {
-    color: $muted;
-  }
-
-  dd {
-    margin: 0;
-  }
-}
-
-.password-hint {
-  margin-left: 0.4rem;
-  color: $muted;
-}
-
-.talk-resources {
-  margin-block: 3rem;
-
-  ul {
-    padding-left: 1.25rem;
-  }
-
-  li + li {
-    margin-top: 0.3rem;
   }
 }
 
 .talk-abstract {
-  margin-top: 4rem;
-
   h2 {
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -173,17 +149,96 @@ main {
   }
 }
 
-@media (max-width: 36rem) {
-  main {
-    padding-top: 2.5rem;
-  }
 
-  .talk-details dl > div {
-    grid-template-columns: 1fr;
-    gap: 0.1rem;
+/* Sidebar */
+
+.talk-sidebar {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+
+  position: sticky;
+  top: 1.5rem;
+
+  h2 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
   }
 }
 
+.talk-details {
+  dl {
+    margin: 0;
+  }
+
+  dl > div {
+    padding-block: 0.75rem;
+    border-top: 1px solid $border;
+
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  dt {
+    color: $muted;
+    font-size: 0.85rem;
+  }
+
+  dd {
+    margin: 0.15rem 0 0;
+  }
+}
+
+.password-hint {
+  display: block;
+  margin-top: 0.25rem;
+  color: $muted;
+  font-size: 0.9rem;
+}
+
+.talk-actions {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $border;
+}
+
+.action-link {
+  display: block;
+  padding: 0.65rem 0.9rem;
+
+  border: 1px solid $accent;
+  border-radius: 0.3rem;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    background: $accent;
+    color: white;
+  }
+}
+
+.talk-resources {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $border;
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+}
+
+
+/* Landing page / archive */
 
 .hero {
   max-width: 44rem;
@@ -224,5 +279,35 @@ main {
   p {
     margin: 0.25rem 0 0;
     color: $muted;
+  }
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 50rem) {
+  .talk-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .talk-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 36rem) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .site-header .wrap {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .talk-row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
   }
 }

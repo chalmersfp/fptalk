@@ -1,13 +1,13 @@
 {{ define "main" }}
 
 <section class="hero">
-  <h1>{{ .Site.Title }}</h1>
+    <h1>{{ .Site.Title }}</h1>
 
-  <p>
-    Functional programming talks at Chalmers University of Technology
-    and the University of Gothenburg.
-  </p>
-  <a href="/calendar.ics">Subscribe to calendar</a>
+    <p>
+        Functional programming talks at Chalmers University of Technology
+        and the University of Gothenburg.
+    </p>
+    <a href="/calendar.ics">Subscribe to calendar</a>
 </section>
 
 {{ $today := now.Format "2006-01-02" }}
@@ -16,38 +16,47 @@
 {{ $recent := slice }}
 
 {{ range .Site.RegularPages.ByDate }}
-  {{ $talkDate := .Date.Format "2006-01-02" }}
+{{ $talkDate := .Date.Format "2006-01-02" }}
 
-  {{ if ge $talkDate $today }}
-    {{ $upcoming = $upcoming | append . }}
-  {{ end }}
+{{ if ge $talkDate $today }}
+{{ $upcoming = $upcoming | append . }}
+{{ end }}
 {{ end }}
 
 {{ range .Site.RegularPages.ByDate.Reverse }}
-  {{ $talkDate := .Date.Format "2006-01-02" }}
+{{ $talkDate := .Date.Format "2006-01-02" }}
 
-  {{ if lt $talkDate $today }}
-    {{ $recent = $recent | append . }}
-  {{ end }}
+{{ if lt $talkDate $today }}
+{{ $recent = $recent | append . }}
+{{ end }}
 {{ end }}
 
 {{ with $upcoming }}
 <section class="upcoming">
-  <h2>Upcoming Talks</h2>
+    <h2>Upcoming Talks</h2>
 
-  {{ range . }}
+    {{ range . }}
     {{ partial "talk-row.html" . }}
-  {{ end }}
+    {{ end }}
 </section>
 {{ end }}
 
 {{ with first 3 $recent }}
 <section class="recent">
-  <h2>Recent Talks</h2>
+    <h2>Recent Talks</h2>
 
-  {{ range . }}
+    {{ range . }}
     {{ partial "talk-row.html" . }}
-  {{ end }}
+    {{ end }}
+
+    <article class="talk-row">
+      <time></time>
+      <div>
+        <h3>
+          <a href="/archive/">See all past talks</a>
+        </h3>
+      </div>
+    </article>
 </section>
 {{ end }}
 

@@ -2,87 +2,116 @@
 
 <article class="talk">
 
-  <header class="talk-header">
-    <p class="talk-date">
-      {{ .Date.Format "2 January 2006" }}
-    </p>
+  <div class="talk-layout">
 
-    <h1>{{ .Title }}</h1>
+    <div class="talk-main">
+      <header class="talk-header">
+        <p class="talk-date">
+          {{ .Date.Format "2 January 2006" }}
+        </p>
 
-    {{ with .Params.speaker }}
-      <p class="talk-speaker">{{ . }}</p>
-    {{ end }}
-  </header>
+        <h1>{{ .Title }}</h1>
 
-  <section class="talk-details">
-    <dl>
-      <div>
-        <dt>Time</dt>
-        <dd>{{ .Date.Format "Monday, 2 January 2006 15:04" }}</dd>
-      </div>
-
-      {{ with .Params.place }}
-        <div>
-          <dt>Place</dt>
-          <dd>{{ . }}</dd>
-        </div>
-      {{ end }}
-
-      {{ with .Params.online }}
-        <div>
-          <dt>Online</dt>
-          <dd>
-            <a href="{{ . }}">Join online</a>
-
-            {{ $today := now.Format "2006-01-02" }}
-            {{ $talkDate := $.Date.Format "2006-01-02" }}
-
-            {{ if ge $talkDate $today }}
-              <span class="password-hint">(password: fptalk)</span>
-            {{ end }}
-          </dd>
-        </div>
-      {{ end }}
-    </dl>
-  </section>
-
-  {{ if or .Params.recording .Params.links }}
-    <section class="talk-resources">
-      <h2>Resources</h2>
-
-      <ul>
-        {{ with .Params.recording }}
-          <li>
-            <a href="{{ . }}">Recording</a>
-          </li>
+        {{ with .Params.speaker }}
+          <div class="talk-speaker">
+            {{ . | markdownify }}
+          </div>
         {{ end }}
+      </header>
 
-        {{ range .Params.links }}
-          {{ if and . .title }}
-            {{ $target := .url }}
-            {{ if .file }}
-              {{ $target = printf "/files/%s" .file }}
-            {{ end }}
-          <li>
-            <a href="{{ $target }}">{{ .title }}</a>
-          </li>
-          {{ end }}
-        {{ end }}
-      </ul>
-    </section>
-  {{ end }}
+      <section class="talk-abstract">
+        <h2>Abstract</h2>
 
-  <a href="{{ with .OutputFormats.Get "Event" }}{{ .RelPermalink }}{{ end }}">
-    Add to calendar
-  </a>
-
-  <section class="talk-abstract">
-    <h2>Abstract</h2>
-
-    <div class="prose">
-      {{ .Content }}
+        <div class="prose">
+          {{ .Content }}
+        </div>
+      </section>
     </div>
-  </section>
+
+    <aside class="talk-sidebar">
+
+      <section class="talk-details">
+        <h2>Talk details</h2>
+
+        <dl>
+          <div>
+            <dt>Date</dt>
+            <dd>{{ .Date.Format "Monday, 2 January 2006" }}</dd>
+          </div>
+
+          <div>
+            <dt>Time</dt>
+            <dd>{{ .Date.Format "15:04" }}</dd>
+          </div>
+
+          {{ with .Params.place }}
+            <div>
+              <dt>Place</dt>
+              <dd>{{ . }}</dd>
+            </div>
+          {{ end }}
+
+          {{ with .Params.online }}
+            <div>
+              <dt>Online</dt>
+              <dd>
+                <a href="{{ . }}">Join online</a>
+
+                {{ $today := now.Format "2006-01-02" }}
+                {{ $talkDate := $.Date.Format "2006-01-02" }}
+
+                {{ if ge $talkDate $today }}
+                  <span class="password-hint">
+                    Password: fptalk
+                  </span>
+                {{ end }}
+              </dd>
+            </div>
+          {{ end }}
+        </dl>
+      </section>
+
+      <section class="talk-actions">
+        {{ with .OutputFormats.Get "Event" }}
+          <a class="action-link" href="{{ .RelPermalink }}">
+            Add to calendar
+          </a>
+        {{ end }}
+      </section>
+
+      {{ if or .Params.recording .Params.links }}
+        <section class="talk-resources">
+          <h2>Resources</h2>
+
+          <ul>
+            {{ with .Params.recording }}
+              <li>
+                <a href="{{ . }}">Recording</a>
+              </li>
+            {{ end }}
+
+            {{ range .Params.links }}
+              {{ if and . .title }}
+                {{ $target := .url }}
+
+                {{ if .file }}
+                  {{ $target = printf "/files/%s" .file }}
+                {{ end }}
+
+                {{ if $target }}
+                  <li>
+                    <a href="{{ $target }}">{{ .title }}</a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+    </aside>
+
+  </div>
 
 </article>
 
