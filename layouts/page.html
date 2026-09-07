@@ -60,6 +60,8 @@
                 {{ $today := now.Format "2006-01-02" }}
                 {{ $talkDate := $.Date.Format "2006-01-02" }}
 
+                {{/* If the talk is in the future or happening today, then display the password. */}}
+                {{/* This way we don't include the password in our archives. */}}
                 {{ if ge $talkDate $today }}
                   <span class="password-hint">
                     Password: fptalk

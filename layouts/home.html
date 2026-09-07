@@ -15,22 +15,18 @@
 {{ $upcoming := slice }}
 {{ $recent := slice }}
 
+{{/* Make two lists, for talks in the future and the past. */}}
 {{ range .Site.RegularPages.ByDate }}
-{{ $talkDate := .Date.Format "2006-01-02" }}
+    {{ $talkDate := .Date.Format "2006-01-02" }}
 
-{{ if ge $talkDate $today }}
-{{ $upcoming = $upcoming | append . }}
-{{ end }}
-{{ end }}
-
-{{ range .Site.RegularPages.ByDate.Reverse }}
-{{ $talkDate := .Date.Format "2006-01-02" }}
-
-{{ if lt $talkDate $today }}
-{{ $recent = $recent | append . }}
-{{ end }}
+    {{ if ge $talkDate $today }}
+        {{ $upcoming = $upcoming | append . }}
+    {{ else }}
+        {{ $recent = $recent | append . }}
+    {{ end }}
 {{ end }}
 
+{{/* If there are future talks, show the section with all future talks in it. */}}
 {{ with $upcoming }}
 <section class="upcoming">
     <h2>Upcoming Talks</h2>
@@ -41,7 +37,8 @@
 </section>
 {{ end }}
 
-{{ with first 3 $recent }}
+{{/* If there are past talks, show the three recent ones. */}}
+{{ with first 3 $recent.Reverse }}
 <section class="recent">
     <h2>Recent Talks</h2>
 
