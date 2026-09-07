@@ -5,7 +5,7 @@
 
 <div>
   <h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </h3>
 
   {{ with .Params.speaker }}

@@ -10,7 +10,7 @@
           {{ .Date.Format "2 January 2006" }}
         </p>
 
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title | markdownify }}</h1>
 
         {{ with .Params.speaker }}
           <div class="talk-speaker">
