@@ -8,7 +8,7 @@ online: LINK        # Optional link to Zoom.
 recording: LINK     # Optional link to YouTube recording.
 links:  # Optional list of supplementary material
   - title: Slides
-  - url: LINK
+    url: LINK
 ---
 
 Abstract.
