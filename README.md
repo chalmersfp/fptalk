@@ -84,9 +84,4 @@ The homepage also provides a single ICS file over all talks, which can be subscr
 This requires, however, that all talks get a unique id.
 We use the **talk title as a unique id**.
 
-Conversion happens automatically.
-On the Hugo side, it requires some adaptations however:
-- The ICS media type has to be registered, so that the files are correctly served in a test environment.
-- `calendar` and `event` are registered as an output type, which makes it so that the `page.event` and `home.calendar` templates are instantiated.
-  The `event` template is instantiated per individual talk.
-  The `calendar` template is instantiated for all talks.
+Conversion happens using the `generate_ics.py` script.

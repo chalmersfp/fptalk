@@ -1,0 +1,4 @@
+icalendar==7.3
+python-frontmatter==1.3
+markdown==3.11
+beautifulsoup4==4.15

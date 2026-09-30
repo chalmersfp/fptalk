@@ -1,28 +1,4 @@
-baseURL = "https://chalmersfp.github.io/"
+baseURL = "https://fptalks.cse.chalmers.se/"
 languageCode = "en"
 title = "Functional Programming Seminar Talks"
 contentDir = "talks"
-
-# Make Hugo recognize the .ics media type.
-[mediaTypes."text/calendar"]
-suffixes = ["ics"]
-
-# Register an output format for .event templates.
-[outputFormats.Event]
-mediaType = "text/calendar"
-baseName = "event"
-isPlainText = true
-notAlternative = true
-
-# Register another output format for .calendar templates.
-[outputFormats.Calendar]
-mediaType = "text/calendar"
-baseName = "calendar"
-isPlainText = true
-notAlternative = true
-
-# And tell the generator to generate HTML plus
-# the newly defined calendar files.
-[outputs]
-home = ["HTML", "Calendar"]     # Makes the landing page render home.calendar as calendar.ics which can be subscribed to.
-page = ["HTML", "Event"]        # Makes every talk (i.e. "page") render page.event as event.ics

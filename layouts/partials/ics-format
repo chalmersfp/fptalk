@@ -1,7 +1,0 @@
-{{- /* Partial that strips markdown and escapes special characters for ICS files. */ -}}
-{{- $text := . | plainify -}}
-{{- $text = replace $text `\` `\\` -}}
-{{- $text = replace $text `;` `\;` -}}
-{{- $text = replace $text `,` `\,` -}}
-{{- $text = replaceRE `\r?\n` `\\n` $text -}}
-{{- return $text -}}

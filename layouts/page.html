@@ -74,11 +74,9 @@
       </section>
 
       <section class="talk-actions">
-        {{ with .OutputFormats.Get "Event" }}
-          <a class="action-link" href="{{ .RelPermalink }}">
-            Add to calendar
-          </a>
-        {{ end }}
+        <a class="action-link" href="{{ .RelPermalink }}event.ics">
+          Add to calendar
+        </a>
       </section>
 
       {{ if or .Params.recording .Params.links }}
