@@ -4,6 +4,22 @@ This project contains definitions of FP talks and the FP seminar talk website.
 The website is generated using [Hugo](https://gohugo.io/), which creates static HTML and ICS files.
 The process is entirely data driven, based on files in [talks/](talks).
 
+## Build and Deploy Website
+
+There is a Makefile in this repository that can be used to do many of the common operations:
+
+To build and deploy the current version of the site to the server, run the following command:
+This will ask for your CID and password before using `rsync` to send the files in the `public` directory to the server.
+This target implies the `build` target, which updates the static files.
+```
+make deploy
+```
+
+To serve the site locally, you can use the following command, which also implies the `build` target:
+```bash
+make serve
+```
+
 ## How to Add a Talk
 
 A talk is added by creating a Markdown file in [talks/](talks).
