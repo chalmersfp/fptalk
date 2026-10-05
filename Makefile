@@ -25,4 +25,4 @@ build: clean
 deploy: build
 	@read -p "CID: " user; \
 	rsync --archive --verbose --human-readable --compress --delete \
-    	public/ "$$user@$(REMOTE):$(REMOTE_DIR)/"
+    	public/* "$$user@$(REMOTE):$(REMOTE_DIR)/"
