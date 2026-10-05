@@ -2,3 +2,6 @@ baseURL = "https://fptalks.cse.chalmers.se/"
 languageCode = "en"
 title = "Functional Programming Seminar Talks"
 contentDir = "talks"
+
+# Front matter dates (e.g. "2026-10-09 11:00:00") are local Gothenburg time.
+timeZone = "Europe/Stockholm"
