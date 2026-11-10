@@ -42,9 +42,15 @@ def with_tz(d: datetime) -> datetime:
 
 
 def iterate_events(directory: Path) -> Iterator[Path]:
-    for event in directory.iterdir():
-        if event.is_file() and event.suffix == '.md':
-            yield event
+    for subdir, _, events in directory.walk():
+        # Skip special "archive" page.
+        if subdir.name == 'archive':
+            continue
+
+        for event in events:
+            event = subdir / event
+            if event.is_file() and event.suffix == '.md':
+                yield event
 
 
 def generate_event(path: Path) -> Event:
@@ -116,10 +122,12 @@ def convert_all(src: Path, dst: Path):
             event = generate_event(path)
             all_events.append(event)
 
-            write_calendar_file(dst / path.stem.lower() / 'event.ics', [event])
+            parent_dir = dst / path.relative_to(src).parent / path.stem.lower()
+            write_calendar_file(parent_dir / 'event.ics', [event])
         except Exception as e:
             print(f'{path}: {e}')
 
+    print(f'Wrote {len(all_events)} event calendars.')
     write_calendar_file(dst / 'calendar.ics', all_events)
 
 
